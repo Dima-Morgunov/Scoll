@@ -24,6 +24,7 @@
 }
 .conteiner img{
     padding: 30px;
+    cursor: pointer;
 }
 .conteiner ul{
     float: right;

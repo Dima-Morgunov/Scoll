@@ -37,6 +37,9 @@ class MainPage extends Component{
             case `form`:
                 scrollToComponent(this.FormPage, { offset: 0, align: 'top', duration: 1500})
                 break;
+            case `header`:
+                scrollToComponent(this.Header, { offset: 0, align: 'top', duration: 1500})
+                break;
             default:
                 return
         }
@@ -44,8 +47,8 @@ class MainPage extends Component{
     render(){
         return(
             <div>
-                <HeaderNavigation  scrollTo ={this.scrollFunc}/>
-                <Header scrollTo ={this.scrollFunc}/>
+                <HeaderNavigation  scrollTo ={this.scrollFunc} />
+                <Header ref={(section) => { this.Header = section; }} scrollTo ={this.scrollFunc} />
                 <AboutAs  scrollTo ={this.scrollFunc} ref={(section) => { this.AboutAs = section; }}/>
                 <Commidoncours/>
                 <Courses scrollTo ={this.scrollFunc} ref={(section) => { this.Courses = section; }}/>

@@ -33,7 +33,7 @@ class HeaderNavigation extends Component{
             <div className='backgraund'>
                 <div className='conteiner-backgraund'>
                     <div className="conteiner">
-                        <img src={logo} alt='£'/>
+                        <img src={logo} alt='£' onClick={() => scrollTo(`header`)}/>
                             <div className="wrapper, toggleMenu"  onClick={this.toggle}>
                                 <div className="btn">
                                     <div className={bar1}></div>
