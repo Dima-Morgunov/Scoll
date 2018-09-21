@@ -1,0 +1,8 @@
+.ui.form{
+    position: absolute;
+    width: 300px !important;
+    left: 50%;
+    margin-left: -150px !important;
+    top: 50%;
+    margin-top: -180px !important;
+}

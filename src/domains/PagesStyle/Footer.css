@@ -1,0 +1,199 @@
+.Footer{
+
+    width: 100%;
+    margin: 0 auto;
+    min-height: 385px;
+    background-color: #212121;
+}
+.Footer-wrap{
+    display: flex;
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+}
+.Footer-conteiner{
+    display: flex;
+    max-width: 570px;
+    width: 100%;
+    justify-content: center;
+}
+.Footer-conteiner ul{
+    list-style-type: none;
+    margin: 75px 0 0 15px;
+    padding: 0 0;
+}
+.Footer-conteiner-item ul li{
+    color: #ffffff;
+    font-family: Raleway Bold;
+    font-size: 20px;
+    line-height: 50px;
+    font-variant: small-caps;
+    cursor: pointer;
+}
+.Footer-conteiner-item{
+    max-width: 570px;
+    width: 100%;
+}
+.Footer-conteiner-item-contacts ul{
+    max-width: 570px;
+    width: 100%;
+    margin: 75px 0 0 0 ;
+    color: #ffffff;
+    font-family: Raleway Medium;
+    font-size: 20px;
+    line-height: 50px;
+    font-variant: small-caps;
+
+}
+.Footer-conteiner-item-contacts ul li{
+    position: relative;
+    display: inline-block;
+}
+.Footer-conteiner-item-contacts ul li span{
+    margin-bottom: -7px;
+    text-transform: none;
+    font-variant: normal;
+
+}
+.Footer-conteiner-item-contacts-img1{
+    width: 20px;
+    height: 33px;
+    display: inline-block;
+    margin-right: 3px;
+    background: url('../../image/FooterTelephonIcon.png');
+}
+
+.Footer-conteiner-item-contacts-img2{
+    width: 30px;
+    height: 23px;
+    display: inline-block;
+    margin-right: 3px;
+    background: url('../../image/FooterMessageIcon.png');
+}
+.Footer-conteiner-item-contacts-img3{
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    margin-right: 3px;
+    background: url('../../image/FooterSkypeIcon.png');
+}
+.Footer-conteiner-item-contacts-img4{
+    width: 19px;
+    height: 27px;
+    display: inline-block;
+    margin-right: 3px;
+    background: url('../../image/FooterAdressIcon.png');
+}
+.Footer-conteiner-social{
+    position: relative;
+    max-width: 570px;
+    width: 100%;
+}
+.Footer-conteiner-social span{
+    position: absolute;
+    top: 240px;
+    right: 0;
+
+    color: #ffffff;
+    font-family: Raleway Medium;
+    font-size: 16px;
+    line-height: 50px;
+    font-variant: small-caps;
+    letter-spacing: 0.8px;
+    cursor: pointer;
+}
+.Footer-conteiner-social ul{
+    float: right;
+}
+.Footer-conteiner-social ul li{
+    display: inline-block;
+    padding: 85px 0 0 23px;
+}
+@media only screen and (max-width: 1140px){
+    .Footer-conteiner-social ul li{
+        padding: 85px 10px 0 23px;
+    }
+    .Footer-conteiner-social span{
+        right: 10px;
+    }
+    .Footer-conteiner-item-contacts ul li{
+        position: relative;
+        display: inline-block;
+        width: 268.047px;
+    }
+}
+@media only screen and (max-width: 800px){
+    .Footer-conteiner-item{
+        display: none;
+    }
+    .Footer-conteiner-item-contacts ul li{
+        padding-left: 10px;
+    }
+    .Footer-conteiner-social ul {
+        padding: 0 10px 0 23px;
+    }
+    .Footer-conteiner-social span{
+        top: 320px;
+        font-size: 10px;
+    }
+    .Footer-conteiner-social{
+        position: absolute;
+        right: 10px;
+    }
+    .Footer-conteiner{
+        width: 370px;
+    }
+    .Footer-conteiner-item-contacts ul{
+         width: 370px;
+     }
+
+}
+
+@media only screen and (max-width: 550px){
+    .Footer-conteiner-social ul li{
+        padding: 45px 5px 0 13px;
+    }
+}
+@media only screen and (max-width: 485px){
+    .Footer{
+        min-height: 300px;
+    }
+    .Footer-conteiner{
+        width: 320px;
+    }
+    .Footer-conteiner-item-contacts ul{
+        width: 320px;
+    }
+    .Footer-conteiner-social ul{
+        float: right;
+        padding: 0 0;
+        margin: 64px 0 0 0;
+    }
+    .Footer-conteiner-social ul li{
+        display: block;
+        margin: 0 0 0 0;
+        padding: 11px 10px 0 0;
+    }
+    .Footer-conteiner-social span{
+        top: 300px;
+        font-size: 10px;
+    }
+    .Footer-conteiner-item-contacts ul{
+        display: block;
+        float: left;
+        margin: 75px 0 0 0 ;
+        font-size: 16px;
+
+    }
+    .Footer-conteiner-item-contacts ul{
+        margin: 30px 0!important;
+    }
+    .Footer-conteiner-social ul{
+        margin: 30px 0 0 0 !important;
+    }
+    .Footer-conteiner-social span{
+        left: 20px;
+        top: 250px;
+        font-size: 10px;
+    }
+}

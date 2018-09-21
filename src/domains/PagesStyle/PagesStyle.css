@@ -1,0 +1,217 @@
+.backgraund{
+    display: block;
+    width: 100%;
+    height: 130px;
+    background: white;
+}
+.conteiner-backgraund{
+    position: fixed;
+    display: block;
+    background: white;
+    width: 100%;
+    height: 130px;
+    z-index: 111;
+}
+.conteiner{
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    max-width: 1140px;
+    width: 100%;
+    height: 130px;
+    background: white;
+    z-index: 111;
+}
+.conteiner img{
+    padding: 30px;
+}
+.conteiner ul{
+    float: right;
+}
+.conteiner ul li{
+    display: inline-block;
+    padding: 38px 45px 43px 0px;
+    color: #212121;
+    font-family: Raleway Bold;
+    font-size: 20px;
+    line-height: 50px;
+    font-variant: small-caps;
+    cursor: pointer;
+    position: relative;
+}
+.conteiner ul li img{
+    padding: 0 0;
+}
+.conteiner span{
+    content: ' ';
+    width: 0;
+
+}
+.conteiner span:hover{
+    transition: all 0.6s ease;
+    background: #00ffff;
+    width: 100%;
+
+}
+
+.toggleMenu{
+    display: none;
+}
+@media only screen and (max-width: 950px){
+    conteiner span:hover, conteiner span:active {
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+        -webkit-user-select: none;
+        -webkit-touch-callout: none /*only to disable context menu on long press*/
+    }
+    .hover {
+        -webkit-user-select: none;
+        -webkit-touch-callout: none;
+    }
+    .conteiner ul li{
+        padding: 38px 25px 43px 0px;
+    }
+    .conteiner img{
+        padding-left: 35px;
+    }
+}
+@media only screen and (max-width: 850px){
+    .conteiner ul li{
+        display: none;
+    }
+    .toggleMenu{
+        display: inline-block;
+        float: right;
+        padding: 33px 25px 0 0px;
+        position: relative;
+    }
+    .openToggleMenu{
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        top: 0;
+        left: 0;
+        margin: 0 0;
+        padding: 0 0;
+        display: block;
+        position: fixed;
+        z-index: 100;
+    }
+    .openToggleMenu-item{
+        display: block !important;
+        padding: 0 25% !important;;
+        text-align: center;
+        top: 60%;
+        margin-bottom: -105px;
+        border-color: black;
+        border: 5px;
+        font-size: 45px !important;
+    }
+    .wrapper{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%)
+    }
+    .btn{
+        position: relative;
+        margin: 20px;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+    }
+
+    .bar1, .bar2, .bar3{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        display: block;
+        font-size: 2px;
+        padding: 0;
+        -webkit-appearance: none;
+        color: #000;
+        width: 50px;
+        height: 7px;
+        background-color: #000;
+        -webkit-transition: all 0.2s ease-in;
+        -webkit-transform: rotate(0deg);
+    }
+    .bar2{
+        top:15px;
+    }
+    .bar3{
+        top:30px;
+    }
+
+    .bar1.active{
+        top:38px;
+        -webkit-transform: rotate(-135deg);
+        -webkit-transition: all 0.2s ease-in;
+    }
+    .bar2.active{
+        left:100px;
+        background-color: transparent;
+        -webkit-transition: all 0.2s ease-in;
+
+    }
+    .bar3.active{
+        top:38px;
+        -webkit-transform: rotate(135deg);
+        -webkit-transition: all 0.2s ease-in;
+    }
+
+}
+
+@media only screen and (max-width: 840px){
+    .conteiner img{
+        padding: 30px;
+    }
+}
+@media only screen and (max-width: 485px){
+    .conteiner img{
+        width: 177.265px;
+        padding: 35.125px 25px;
+    }
+    .conteiner ul li{
+        padding: 38px 25px 43px 0px;
+    }
+    .btn{
+        width: 40px;
+        float: right;
+        margin: 15px;
+    }
+    .toggleMenu {
+        padding: 18px 10px 0 0px;
+    }
+    .bar1, .bar2, .bar3{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        display: block;
+        font-size: 2px;
+        padding: 0;
+        -webkit-appearance: none;
+        color: #000;
+        width: 40px;
+        height: 5px;
+        background-color: #000;
+        -webkit-transition: all 0.2s ease-in;
+        -webkit-transform: rotate(0deg);
+    }
+    .bar2{
+        top:13px;
+    }
+    .bar3{
+        top:26px;
+    }
+    .backgraund{
+        height: 100px;
+
+    }
+    .conteiner-backgraund{
+        height: 100px;
+    }
+    .conteiner{
+        height: 100px;
+
+    }
+}

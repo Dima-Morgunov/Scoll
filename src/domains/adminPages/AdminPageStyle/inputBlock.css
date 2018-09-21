@@ -1,0 +1,13 @@
+.wrapInput{
+    position: relative;
+}
+.inputBlock{
+    width: 90% ;
+    margin: 10px 0;
+}
+.deleteButton{
+    z-index: 100;
+    position: absolute;
+    right: 0;
+    top: 11px;
+}

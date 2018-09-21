@@ -1,0 +1,119 @@
+.AboutAs-conteiner{
+    max-width: 1140px;
+    width: 100%;
+    min-height: 610px;
+    height: auto;
+    margin: auto auto;
+}
+.AboutAs-wrap{
+    position: relative;
+}
+.AboutAs-wrap-background{
+    position: absolute;
+    left: 50%;
+    opacity: 0.1;
+    margin: 0 0;
+    top: 55px;
+    color: #212121;
+    font-size: 200px;
+    letter-spacing: 5.5px;
+    margin-left: -322px;
+    font-family: Raleway Bold;
+    text-transform: uppercase;
+}
+.AboutAs-conteiner h3{
+    margin: 0 auto;
+    text-align: center;
+    padding:  165px 0 0 0;
+    color: #212121;
+    font-family: "Raleway Bold";
+    font-size: 30px;
+    line-height: 50px;
+    font-variant: small-caps;
+    text-transform: uppercase;
+}
+.AboutAs-conteiner-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.AboutAs-conteiner div img{
+    max-width: 429px;
+    width: 100%;
+    height: auto;
+}
+.AboutAs-conteiner div span{
+    display: block;
+    max-width: 552px;
+    padding: 40px 0 0 92px;
+    color: #212121;
+    font-family: "Raleway Bold";
+    font-size: 20px;
+    line-height: 35px;
+}
+.AboutAs-conteiner input{
+    display: block;
+    margin: 65px auto 0;
+    width: 360px;
+    height: 66px;
+    background-color: #00ffff;
+    color: #212121;
+    font-family: "Raleway Bold";
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px){
+    .AboutAs-conteiner div span{
+        display: block;
+        height: auto;
+        padding: 80px 0 0 40px;
+        font-size: 16px;
+    }
+    .AboutAs-wrap-background{
+        top: 90px;
+        font-size: 130px;
+        margin-left: -215px;
+    }
+    .AboutAs-conteiner input{
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        width: 360px;
+        height: 66px;
+        background-color: #00ffff;
+        margin-top: 55px;
+        color: #212121;
+        font-family: "Raleway Bold";
+        font-size: 20px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        border: none;
+    }
+
+}
+@media only screen and (max-width: 485px){
+    .AboutAs-conteiner input{
+        -webkit-appearance: none !important;
+        -moz-appearance: none !important;
+        appearance: none !important;
+        border-radius: 0;
+        width: 280px;
+        height: 66px;
+    }
+    .AboutAs-wrap-background{
+        top: 55px;
+        font-size: 90px;
+        margin-left: -152px;
+    }
+    .AboutAs-conteiner div span{
+        padding: 50px 10px 0 10px;
+        text-align: justify;
+    }
+    .AboutAs-conteiner input{
+        margin: 35px auto 20px;
+    }
+}

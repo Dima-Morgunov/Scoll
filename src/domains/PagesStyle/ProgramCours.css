@@ -1,0 +1,140 @@
+.ProgramCours-conteiner{
+    max-width: 1140px;
+    width: 100%;
+    min-height: 1154px;
+    margin: auto auto;
+    position: relative;
+    padding-bottom: 50px;
+}
+.ProgramCours{
+    position: relative;
+}
+.ProgramCours-background{
+    position: absolute;
+    left: 50%;
+    opacity: 0.1;
+    margin: 0 0;
+    top: 70px;
+    color: #212121;
+    font-size: 110px;
+    letter-spacing: 5.5px;
+    margin-left: -545px;
+    font-family: Raleway Bold;
+    text-transform: uppercase;
+}
+.ProgramCours-conteiner h3{
+    margin: 0 auto;
+    text-align: center;
+    padding:  138px 0 0 0;
+    color: #212121;
+    font-family: Raleway Bold;
+    font-size: 30px;
+    line-height: 50px;
+    font-variant: small-caps;
+    text-transform: uppercase;
+}
+.ProgramCours-conteiner-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.ProgramCours-conteiner-wrap-item{
+    width: 570px;
+    margin-bottom: 40px !important;
+}
+.ProgramCours-conteiner-wrap-item p{
+    color: #212121;
+    font-family: Raleway Bold;
+    font-size: 30px;
+    font-variant: small-caps;
+    letter-spacing: 1.5px;
+}
+.ProgramCours-conteiner-wrap-item p span{
+    padding: 7.5px 0 7.5px 14px;
+    height: 50px;
+    background-color: #00ffff;
+}
+.ProgramCours-conteiner-wrap ul li{
+    color: #212121;
+    font-size: 18px;
+    font-family: "Raleway Medium";
+    line-height: 33px;
+    letter-spacing: 0.9px;
+    list-style-position: outside;
+    list-style-image: url(../../image/dot.png);
+}
+
+
+.ProgramCours-conteiner input{
+    display: block;
+    margin: 47px auto 0;
+    width: 360px;
+    height: 66px;
+    background-color: #00ffff;
+    color: #212121;
+    font-family: Raleway Bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
+    border-radius: 0;
+    cursor: pointer;
+}
+@media only screen and (max-width: 1140px) {
+    .ProgramCours-background{
+        width: 319px;
+        top: 55px;
+        font-size: 34px;
+        left: 50%;
+        margin-left: -160px;
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 678px){
+    .ProgramCours-conteiner-wrap ul li{
+        line-height: 1.5;
+    }
+    .ProgramCours-conteiner h3{
+        padding: 90px 0 0 0;
+    }
+    .ProgramCours-conteiner-wrap ul{
+       padding: 0 10px;
+    }
+    .ProgramCours-background{
+        display: none;
+    }
+
+}
+@media only screen and (max-width: 485px){
+    .ProgramCours-conteiner input{
+        -webkit-appearance: none !important;
+        -moz-appearance: none !important;
+        appearance: none !important;
+        border-radius: 0;
+        width: 280px;
+        height: 66px;
+    }
+    .ProgramCours-background{
+        width: 319px;
+        top: 55px;
+        font-size: 24px;
+        left: 50%;
+        margin-left: -160px;
+        text-align: center;
+    }
+    .ProgramCours-conteiner-wrap ul{
+        width: 250px;
+        margin: 0 auto;
+    }
+    .ProgramCours-conteiner-wrap-item{
+        margin: 0 auto;
+        width: 290px;
+    }
+    .ProgramCours-conteiner-wrap ul li{
+        font-size: 10px;
+          letter-spacing: 0.4px
+}
+}

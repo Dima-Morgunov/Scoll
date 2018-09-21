@@ -1,0 +1,133 @@
+
+.InfoCourses{
+    width: 100%;
+    min-height: 670px;
+    height: auto;
+    margin: auto auto;
+    background: #212121 ;
+}
+.InfoCourses-conteiner{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.Courses-wrap{
+    padding-bottom: 50px;
+}
+.InfoCourses-conteiner p{
+    max-width: 570px;
+    width: 100%;
+    color: #ffffff;
+    font-family: Raleway Bold;
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 141.67px;
+    text-transform: uppercase;
+    letter-spacing: 4.5px;
+    justify-content: flex-start;
+    text-align: center;
+    margin-top: 160px;
+}
+.Courses-conteiner-mounth{
+    position: relative;
+    max-width: 570px;
+    width: 100%;
+}
+.Courses-conteiner-mounth-imgclock{
+    position: relative;
+    max-width: 570px;
+    width: 100%;
+}
+.Courses-conteiner-mounth-imgclock ul{
+    display: inline-block;
+    list-style: none;
+}
+.Courses-conteiner-mounth-imgclock img{
+    padding: 100px 0 0 15px;
+}
+.Courses-conteiner-mounth img{
+    display: inline;
+    padding-top: 140px;
+    padding-left: 15px;
+}
+.Courses-conteiner-mounth ul{
+    display: inline-block;
+    list-style: none;
+}
+
+.Courses-conteiner-mounth-1{
+    color: #00ffff;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 35px;
+    text-transform: uppercase;
+    font-family: "Raleway Bold";
+    letter-spacing: 0.6px;
+
+}
+.Courses-conteiner-mounth-2 {
+    color: #ffffff;
+    font-family: "Raleway";
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+.InfoCourses input{
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
+    border-radius: 0;
+    height: 66px;
+    display: block;
+    width: 360px;
+    background-color: #00ffff;
+    color: #212121;
+    font-family: "Raleway Bold";
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 100px auto 0 auto;
+    border: none;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1140px) {
+    .InfoCourses-conteiner p{
+        margin-bottom: 0;
+    }
+    .InfoCourses{
+        padding: 0 0 50px 0;
+    }
+}
+@media only screen and (max-width: 485px){
+    .InfoCourses input{
+        -webkit-appearance: none !important;
+        -moz-appearance: none !important;
+        appearance: none !important;
+        border-radius: 0;
+        width: 280px;
+        height: 66px;
+    }
+    .Courses-conteiner-mounth ul{
+        padding: 0 0 0 20px;
+    }
+    .Courses-conteiner-mounth-imgclock ul{
+        padding: 0 0 0 20px;
+    }
+    .InfoCourses-conteiner p{
+        margin-top: 60px;
+    }
+    .Courses-conteiner-mounth img{
+        padding-top: 60px;
+    }
+    .Courses-conteiner-mounth-1{
+        font-size: 20px;
+    }
+    .Courses-conteiner-mounth-2{
+        font-size: 20px;
+    }
+    .InfoCourses input{
+        margin: 80px auto 50px;
+    }
+}

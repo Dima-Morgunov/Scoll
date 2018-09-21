@@ -1,0 +1,18 @@
+.conteiner {
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+    height: 130px;
+    display: flex;
+}
+.conteiner-wrap{
+    max-width: 1140px;
+    width: 100%;
+    display: flex;
+}
+.conteiner-wrap img{
+    height: 70px;
+}
+.conteiner-wrap ul li {
+    display: inline-block;
+}

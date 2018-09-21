@@ -1,0 +1,164 @@
+.Courses-conteiner{
+    max-width: 1140px;
+    width: 100%;
+    height: auto;
+    margin: auto auto;
+}
+.Courses-conteiner-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.Courses-wrap{
+    position: relative;
+}
+.Courses-wrap-background{
+    position: absolute;
+    left: 50%;
+    opacity: 0.1;
+    margin: 0 0;
+    top: 55px;
+    color: #212121;
+    font-size: 200px;
+    letter-spacing: 5.5px;
+    margin-left: -322px;
+    font-family: Raleway Bold;
+    text-transform: uppercase;
+}
+.Courses-conteiner h3{
+    margin: 0 auto -60px;
+    text-align: center;
+    padding:  165px 0 0 0;
+    color: #212121;
+    font-family: "Raleway Bold";
+    font-size: 30px;
+    line-height: 50px;
+    font-variant: small-caps;
+    text-transform: uppercase;
+}
+
+.Courses-conteiner-wrap-PHP{
+    position: relative;
+    min-height: 990px;
+    max-width: 555px;
+    width: 100%;
+    padding-right: 15px;
+}
+.Courses-conteiner-wrap-PHP-imageData{
+    margin-bottom: -5px;
+}
+.Courses-conteiner-wrap-PHP-img{
+    height: auto;
+    width: 100%;
+}
+
+.Courses-conteiner-wrap-PHP-Data{
+    position: absolute;
+    top: 50px;
+    left: 130px;
+    font-family: "FiraSans Bold";
+}
+.Courses-conteiner-wrap-PHP-star{
+    padding: 54px 0 41px 0;
+    color: #00bfb9;
+    font-family: "Raleway Bold";
+    font-size: 20px;
+    line-height: 20px;
+}
+.Courses-conteiner-wrap-PHP-star img{
+    padding-left: 10px;
+}
+.Courses-conteiner-wrap-FrontEnd{
+    position: relative;
+    min-height: 990px;
+    max-width: 555px;
+    width: 100%;
+    padding-left: 15px;
+}
+.Courses-conteiner-wrap-FrontEnd-img{
+    height: auto;
+    width: 100%;
+}
+.Courses-conteiner-wrap-FrontEnd-Data{
+    right: 25px;
+    top: 50px;
+    position: absolute;
+    font-family: "FiraSans Bold";
+}
+.Courses-conteiner-wrap-FrontEnd-CoursesData{
+    float: right;
+    margin-bottom: -1px;
+}
+.Courses-conteiner-wrap-FrontEnd-star{
+    padding: 54px 0 41px 0;
+    color: #00bfb9;
+    font-family: "Raleway Bold";
+    font-size: 20px;
+    line-height: 20px;
+}
+.Courses-conteiner-wrap-FrontEnd-star img{
+    padding-left: 10px;
+}
+.Courses-conteiner-wrap-FrontEnd-Descript{
+    color: #212121;
+    font-size: 18px;
+    line-height: 35px;
+    font-variant: small-caps;
+    font-family: "Raleway Medium";
+    margin: 0 0;
+}
+.Courses-conteiner-wrap-FrontEnd-Descript-title{
+    /* Style for "Курсы Fron" */
+    width: 556px;
+    height: 227px;
+    color: #212121;
+    font-size: 18px;;
+    line-height: 35px;
+    font-variant: small-caps;
+    font-family: "Raleway Bold";
+}
+@media only screen and (max-width: 1140px){
+    .Courses-conteiner h3{
+        margin: 0 auto 20px;
+        padding:  90px 0 0 0;
+    }
+    .Courses-conteiner-wrap-PHP{
+        padding: 0 10px;
+    }
+    .Courses-conteiner-wrap-PHP-Data{
+        left: 140px;
+    }
+    .Courses-conteiner-wrap-FrontEnd{
+        padding: 0 10px;
+        min-height: 920px;
+    }
+    .Courses-conteiner-wrap-PHP{
+        padding: 0 10px;
+        min-height: 920px;
+    }
+    .Courses-conteiner-wrap-FrontEnd-CoursesData{
+        float: left !important;
+        margin-bottom: -1px;
+    }
+    .Courses-conteiner-wrap-FrontEnd-Data{
+        left: 140px;
+    }
+}
+@media only screen and (max-width: 768px){
+    .Courses-wrap-background{
+        top: 90px;
+        font-size: 120px;
+        margin-left: -222px;
+    }
+    .Courses-wrap-background{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 485px){
+    .Courses-wrap-background{
+        top: 55px;
+        font-size: 80px;
+        margin-left: -153.5px;
+    }
+}

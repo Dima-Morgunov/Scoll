@@ -1,0 +1,119 @@
+.Form{
+    width: 100%;
+    margin: 0 auto;
+    height: 740px;
+}
+.Form-wrap{
+    position: relative;
+}
+.Form-wrap-background{
+    position: absolute;
+    left: 50%;
+    opacity: 0.1;
+    margin: 0 0;
+    top: 70px;
+    color: #212121;
+    font-size: 95px;
+    letter-spacing: 5.5px;
+    margin-left: -545px;
+    font-family: Raleway Bold;
+    text-transform: uppercase;
+}
+.Form-conteiner{
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+}
+.Form h3{
+    margin: 0 auto;
+    text-align: center;
+    padding:  115px 0 55px 0;
+    color: #212121;
+    font-family: Raleway Bold;
+    font-size: 30px;
+    line-height: 50px;
+    font-variant: small-caps;
+    text-transform: uppercase;
+}
+.Form-conteiner input{
+    margin: 0 auto;
+    max-width: 600px;
+    width: 100%;
+    height: 100px;
+    display: block;
+    border-width: 2px;
+    border-top: 0px;
+    border-left: 0;
+    border-right: 0;
+    border-color: #212121;
+    cursor: pointer;
+    color: #212121;
+    font-family: Raleway Light;
+    font-size: 30px;
+    letter-spacing: 1.5px;
+    text-align: center;
+}
+
+.Form-conteiner-button{
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
+    border-radius: 0;
+    width: 280px;
+    height: 66px;
+    display: block;
+    margin: 65px auto 0;
+    width: 360px;
+    height: 66px;
+    background-color: #00ffff;
+    color: #212121;
+    font-family: Raleway Bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    border: none;
+}
+@media only screen and (max-width: 1220px){
+    .Form-wrap-background{
+        font-size: 65px;
+        margin-left: -409px;
+    }
+}
+@media only screen and (max-width: 819px){
+    .Form-wrap-background{
+        display: none;
+    }
+    .Form h3{
+        padding: 90px 0 40px 0;
+    }
+    .Form{
+        height: auto;
+        padding-bottom: 50px;
+    }
+}
+@media only screen and (max-width: 585px){
+    .Form-wrap-background{
+        font-size: 30px;
+        margin-left: -210px;
+    }
+    .Form-conteiner input{
+        width: 290px;
+    }
+}
+@media only screen and (max-width: 485px){
+    .Form-conteiner-button {
+        -webkit-appearance: none !important;
+        -moz-appearance: none !important;
+        appearance: none !important;
+        border-radius: 0;
+        width: 280px;
+        height: 66px;
+    }
+    .Form-wrap-background{
+        top: 35px;
+        font-size: 30px;
+        margin-left: -153.5px;
+        text-align: center;
+    }
+}
