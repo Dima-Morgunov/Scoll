@@ -3,6 +3,7 @@ import "../PagesStyle/News.css"
 import  photo1 from "../../image/NewsPhoto1.png"
 import  photo2 from "../../image/NewsPhoto2.png"
 import Slider from "react-slick";
+import axios from "axios";
 
 
 class News extends Component{
@@ -30,6 +31,20 @@ class News extends Component{
             newsDeskription2: 'Зачисление в программу «IT-школа Samsung» будет осуществляться через вступительное тестирование, которое смогут пройти школьники 9-11 классов в учебных заведениях Киева, Харькова, Днепра, Винницы, Львова и Одессы. Под крылом современных программистов и специалистов Украинского центра разработок и исследованийamsung будут проводиться занятия для тех двухсот учеников, которые получат высокий показатель при отборе.'
         }],
     }
+
+    getNews = () =>{
+        return axios.get(`/news`)
+    }
+    componentDidMount() {
+        this.getNews()
+            .then(result => {
+                console.log(result.data[0])
+                this.setState({
+
+                })
+            })
+    }
+
     render(){
 
         const {newsElement} = this.state
@@ -61,13 +76,11 @@ class News extends Component{
                             <img src={photo2} alt='!'/>
                         </div>
                         <div className="News-conteiner-decript">
-
-                                    <div>
-                                        <p>{e.newsTitlle}</p>
-                                        <span>{e.newsDeskription1}</span>
-                                        <span>{e.newsDeskription2}</span>
-                                    </div>
-
+                            <div>
+                                <p>{e.newsTitlle}</p>
+                                <span>{e.newsDeskription1}</span>
+                                <span>{e.newsDeskription2}</span>
+                            </div>
                         </div>
                     </div>
                 </div>

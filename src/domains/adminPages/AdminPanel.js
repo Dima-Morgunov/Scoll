@@ -46,16 +46,7 @@ class AdminPanel extends Component{
         ],
 
         // 3й блок
-        secondParagraph:[{
-            id: 3,
-            text:'cccc'
-        },{
-            id: 4,
-            text:''
-        },{
-            id: 5,
-            text:''
-        }],
+        secondParagraph:null,
         firstParagraph:[{
             id: 1,
             text:'aaaa'
@@ -76,25 +67,113 @@ class AdminPanel extends Component{
         data: {
             //1й блок
             numChildren: 0,
-            startFistCours:'',
-            levelFirstCours:[],
-            descriptFirstTittleCours:'',
-            descriptFirstCours:'',
-            startSecondCours:'',
-            levelSecondCours:[],
-            descriptSecondTittleCours:'',
+            startFistCours:null,
+            levelFirstCours:null,
+            descriptFirstTittleCours:null,
+            descriptFirstCours:null,
+            startSecondCours:null,
+            levelSecondCours:null,
+            descriptSecondTittleCours:null,
             //2й блок
-            drationCourses:'',
-            monthBeginningCourses:'',
-            numberOfTimes:'',
-            lessonDuration:'',
+            drationCourses:null,
+            monthBeginningCourses:null,
+            numberOfTimes:null,
+            lessonDuration:null,
             //3й блок
 
             //4й блок
             freePlacesCount:"",
         },
     };
+    // Гет запрос на 1й блок
+    getFrontEndData = () =>{
+        return axios.get(`/front-end`)
+    }
+    getBackEndData = () =>{
+        return axios.get(`/php`)
+    }
+    // Гет запрос на 2й блок
+    getData = () =>{
+        return axios.get(`/data`)
+    }
+    // Гет запрос на 3й блок
+    getProgramOne = () =>{
+        return axios.get(`/program-one`)
+    }
+    getProgramTwo = () =>{
+        return axios.get(`/program-two`)
+    }
+    componentDidMount() {
+        this.getProgramOne()
+            .then(result => {
+                console.log(result.data[0])
+                let randerArray = []
+                for (var key in result.data[0]){
+                    if(key !== 'id' && key !== 'created_at'  && key !== 'updated_at')
+                        randerArray.push(result.data[0][key])
+                }
+                let obj = {}
+                let arrayObj = []
+                for (let i = 1; i < randerArray.length; i++){
+                    if (randerArray.length !==undefined){
+                            obj.id = i;
+                            obj.text = randerArray[i]
+                    }
+                }
+                console.log(arrayObj)
+                this.setState({
+                    secondParagraph: result.data[0],
+                })
+            })
+        this.getProgramTwo()
+            .then(result => {
+                let randerArray = []
+                for (var key in result.data[0]){
+                    if(key !== 'id' && key !== 'created_at'  && key !== 'updated_at')
+                        randerArray.push(result.data[0][key])
+                }
+                this.setState({
+                    firstParagraph: randerArray,
 
+                })
+            })
+        this.getData()
+            .then(result => {
+                this.setState({
+                    data: {...this.state.data,
+                        drationCourses:  result.data[0].col,
+                        numberOfTimes: result.data[0].days,
+                        monthBeginningCourses: result.data[0].month,
+                        lessonDuration: result.data[0].time,
+                    }
+                })
+            })
+        this.getBackEndData()
+            .then(result => {
+                this.setState({
+                    data: {
+                        ...this.state.data,
+                        startFistCours: result.data[0].data,
+                        levelFirstCours: result.data[0].complication,
+                        descriptFirstTittleCours: result.data[0].title,
+                        descriptFirstCours: result.data[0].text,
+                    }
+                })
+            })
+        this.getFrontEndData()
+            .then(result => {
+                this.setState({
+                    data: {
+                        ...this.state.data,
+                        startSecondCours: result.data[0].data,
+                        levelSecondCours: result.data[0].complication,
+                        descriptSecondTittleCours: result.data[0].title,
+                        descriptSecondCours: result.data[0].text,
+                    }
+
+                })
+            })
+    }
 //функция изменения инпутов
     onChange = e => {
         console.log(this.state.data)
@@ -139,8 +218,6 @@ class AdminPanel extends Component{
             newsElement: newState
         })
     }
-
-
     getRandomInt = (min, max) => {
         return Math.floor(Math.random() * (max - min + 1)) + min;
     }
@@ -215,12 +292,12 @@ class AdminPanel extends Component{
 
     onChangeFirstBlock = event => {
         var arrId = event.target.id
-        var el = this.state.firstParagraph.filter(e => {if(e.id == arrId) return e})
+        var el = this.state.firstParagraph.filter(e => {if(e.id === arrId) return e})
         var obj = el[0]
         console.log(obj)
 
         var newArr = this.state.firstParagraph.map(e => {
-            if(e.id == arrId) {
+            if(e.id === arrId) {
                 e.text = event.target.value
             }
             return e
@@ -232,12 +309,12 @@ class AdminPanel extends Component{
     }
     onChangeSecondBlock = event => {
         var arrId = event.target.id
-        var el = this.state.secondParagraph.filter(e => {if(e.id == arrId) return e})
+        var el = this.state.secondParagraph.filter(e => {if(e.id === arrId) return e})
         var obj = el[0]
         console.log(obj)
 
         var newArr = this.state.secondParagraph.map(e => {
-            if(e.id == arrId) {
+            if(e.id === arrId) {
                 e.text = event.target.value
             }
             return e
@@ -249,12 +326,12 @@ class AdminPanel extends Component{
     }
     onChangeStartCoursesDescript = event => {
         var arrId = event.target.id
-        var el = this.state.startCoursesDescript.filter(e => {if(e.id == arrId) return e})
+        var el = this.state.startCoursesDescript.filter(e => {if(e.id === arrId) return e})
         var obj = el[0]
         console.log(obj)
 
         var newArr = this.state.startCoursesDescript.map(e => {
-            if(e.id == arrId) {
+            if(e.id === arrId) {
                 e.text = event.target.value
             }
             return e
@@ -266,12 +343,12 @@ class AdminPanel extends Component{
     }
     onChangeNewsElementTittle = event => {
         var arrId = event.target.id
-        var el = this.state.newsElement.filter(e => {if(e.id == arrId) return e})
+        var el = this.state.newsElement.filter(e => {if(e.id === arrId) return e})
         var obj = el[0]
         console.log(obj)
 
         var newArr = this.state.newsElement.map(e => {
-            if(e.id == arrId) {
+            if(e.id === arrId) {
                 e.newsTitlle = event.target.value
             }
             return e
@@ -283,12 +360,12 @@ class AdminPanel extends Component{
     }
     onChangeNewsElementDescript = event => {
         var arrId = event.target.id
-        var el = this.state.newsElement.filter(e => {if(e.id == arrId) return e})
+        var el = this.state.newsElement.filter(e => {if(e.id === arrId) return e})
         var obj = el[0]
         console.log(obj)
 
         var newArr = this.state.newsElement.map(e => {
-            if(e.id == arrId) {
+            if(e.id === arrId) {
                 e.newsDeskription = event.target.value
             }
             return e
@@ -296,9 +373,7 @@ class AdminPanel extends Component{
         this.setState({
             newsElement: newArr
         })
-
     }
-
     render(){
 
         const {data, firstParagraph, startCoursesDescript, secondParagraph, newsElement} = this.state;
@@ -381,9 +456,7 @@ class AdminPanel extends Component{
                         {
                             firstParagraph.map(e => (
                                 <div className='wrapInput'>
-                                    <Button className='deleteButton' onClick={() => this.onDeleteFirstModule(e.id)}>
-                                        X
-                                    </Button>
+                                    <Button className='deleteButton' onClick={() => this.onDeleteFirstModule(e.id)}>X</Button>
                                     <Input
                                         placeholder='Начало курса'
                                         value={e.text}
@@ -401,7 +474,7 @@ class AdminPanel extends Component{
             { menuItem: '2й модуль', render: () =>
                             <Tab.Pane>
                             {
-                                secondParagraph.map(e => (
+                                secondParagraph.map((e, item, key) => (
                                     <div className='wrapInput'>
                                         <Button className='deleteButton' onClick={() => this.onDeleteSecondModule(e.id)}>
                                             X
@@ -409,9 +482,9 @@ class AdminPanel extends Component{
                                         <Input
                                             placeholder='Начало курса'
                                             value={e.text}
-                                            id={e.id}
+                                            id={e.key}
                                             onChange={this.onChangeSecondBlock}
-                                            key={e.id}
+                                            key={e.key}
                                             className='inputBlock'
                                         />
                                     </div>
@@ -561,11 +634,10 @@ class AdminPanel extends Component{
                         <Tab panes = {newsBlock}/>
                     </Tab.Pane> },
         ]
-
         return(
             <div>
                 {
-                        <Tab menu={{ fluid: true, vertical: true, tabular: true }} panes={panes} />
+                    <Tab menu={{ fluid: true, vertical: true, tabular: true }} panes={panes} />
                 }
             </div>
 

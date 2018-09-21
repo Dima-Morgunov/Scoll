@@ -22,17 +22,13 @@ class Commidoncours extends Component{
             descriptSecondCours:null,
         }
     }
-
     starsCount = count => {
-
         var stars = [];
         for (var i = 0; i < count; i++) {
             stars.push(<img key={i} src={imageStar} alt="#"/>);
         }
         return stars
     }
-
-
     getFrontEndData = () =>{
         return axios.get(`/front-end`)
     }
@@ -49,17 +45,14 @@ class Commidoncours extends Component{
                         descriptFirstTittleCours: result.data[0].title,
                         descriptFirstCours: result.data[0].text,
                         }
-
                 })
             })
         this.getFrontEndData()
             .then(result => {
-                console.log(result)
                 this.setState({
-
                     data: {...this.state.data,
                         startSecondCours:  result.data[0].data,
-                        levelSecondCourst: result.data[0].complication,
+                        levelSecondCours: result.data[0].complication,
                         descriptSecondTittleCours: result.data[0].title,
                         descriptSecondCours: result.data[0].text,
                     }
@@ -67,15 +60,8 @@ class Commidoncours extends Component{
                 })
             })
     }
-
     render(){
-
-
         const {data} = this.state;
-
-
-
-
         return(
             <div className='Courses-wrap'>
                 <p className='Courses-wrap-background'>Курсы</p>
@@ -96,7 +82,10 @@ class Commidoncours extends Component{
                             }
                         </div>
                         <p className="Courses-conteiner-wrap-FrontEnd-Descript">
-                            <span className="Courses-conteiner-wrap-FrontEnd-Descript-title">{data.descriptFirstTittleCours}</span><br/>
+                            <span className="Courses-conteiner-wrap-FrontEnd-Descript-title">
+                                {data.descriptFirstTittleCours}
+                            </span>
+                            <br/>
                             {data.descriptFirstCours}
                         </p>
                     </div>

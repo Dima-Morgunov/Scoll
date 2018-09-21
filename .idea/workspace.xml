@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1f98869e-3a95-4365-8337-63efddcc15d9" name="Default Changelist" comment="" />
+    <list default="true" id="1f98869e-3a95-4365-8337-63efddcc15d9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/adminPages/AdminPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/adminPages/AdminPanel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/pages/Commidoncours.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/pages/Commidoncours.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/pages/Courses.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/pages/Courses.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/pages/News.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/pages/News.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/pages/ProgramCours.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/pages/ProgramCours.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/pages/StartCourses.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/pages/StartCourses.js" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -25,25 +35,18 @@
     <expand>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="sadsasadsa" type="feb32156:DbDataSourceImpl" />
+        <item name="projects@localhost" type="feb32156:DbDataSourceImpl" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="sadsasadsa" type="feb32156:DbDataSourceImpl" />
+        <item name="projects@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="sadsasadsa" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="projects: schema" type="c314c289:MysqlImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="sadsasadsa" type="feb32156:DbDataSourceImpl" />
+        <item name="projects@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="projects: schema" type="c314c289:MysqlImplModel$Schema" />
-        <item name="users: table" type="98d5ac3d:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -122,45 +125,49 @@
         <counts>
           <entry key="css" value="286" />
           <entry key="html" value="2" />
-          <entry key="js" value="6523" />
+          <entry key="js" value="7345" />
+          <entry key="json" value="5" />
+          <entry key="txt" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="286" />
           <entry key="HTML" value="2" />
-          <entry key="JavaScript" value="6523" />
+          <entry key="JSON" value="5" />
+          <entry key="JavaScript" value="7345" />
+          <entry key="PLAIN_TEXT" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="abouts" value="1" />
-          <entry key="clients" value="1" />
-          <entry key="contacts" value="1" />
-          <entry key="course_fronts" value="1" />
-          <entry key="course_phps" value="1" />
+          <entry key="abouts" value="3" />
+          <entry key="clients" value="3" />
+          <entry key="contacts" value="3" />
+          <entry key="course_fronts" value="3" />
+          <entry key="course_phps" value="3" />
           <entry key="css" value="21" />
-          <entry key="data" value="1" />
+          <entry key="data" value="3" />
           <entry key="html" value="1" />
-          <entry key="image_news" value="1" />
-          <entry key="js" value="61" />
-          <entry key="json" value="2" />
-          <entry key="migrations" value="1" />
-          <entry key="news" value="1" />
-          <entry key="program_ones" value="1" />
-          <entry key="program_twos" value="2" />
-          <entry key="sql" value="1" />
-          <entry key="users" value="2" />
+          <entry key="image_news" value="3" />
+          <entry key="js" value="76" />
+          <entry key="json" value="3" />
+          <entry key="migrations" value="2" />
+          <entry key="news" value="3" />
+          <entry key="program_ones" value="3" />
+          <entry key="program_twos" value="4" />
+          <entry key="sql" value="5" />
+          <entry key="users" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="21" />
-          <entry key="Database Element" value="14" />
+          <entry key="Database Element" value="37" />
           <entry key="HTML" value="1" />
-          <entry key="JSON" value="2" />
-          <entry key="JavaScript" value="61" />
-          <entry key="Scratch" value="1" />
+          <entry key="JSON" value="3" />
+          <entry key="JavaScript" value="76" />
+          <entry key="Scratch" value="5" />
         </counts>
       </usages-collector>
     </session>
@@ -170,20 +177,40 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/domains/adminPages/AdminPanel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="-1092">
+              <caret line="120" column="21" selection-start-line="120" selection-start-column="21" selection-end-line="120" selection-end-column="21" />
               <folding>
                 <element signature="e#0#72#0" expanded="true" />
+                <element signature="e#7836#9771#0" />
+                <element signature="e#9819#11342#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/domains/pages/Footer.js">
+        <entry file="file://$PROJECT_DIR$/src/domains/MainPage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1064">
-              <caret line="38" column="24" lean-forward="true" selection-start-line="38" selection-start-column="24" selection-end-line="38" selection-end-column="24" />
+            <state relative-caret-position="371">
+              <caret line="51" column="21" lean-forward="true" selection-start-line="51" selection-start-column="21" selection-end-line="51" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/domains/pages/StartCourses.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="280">
+              <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/domains/pages/Courses.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="532">
+              <caret line="19" column="13" lean-forward="true" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -192,22 +219,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/domains/pages/HeaderNavigation.js">
+        <entry file="file://$PROJECT_DIR$/src/domains/pages/ProgramCours.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="36" column="65" selection-start-line="36" selection-start-column="65" selection-end-line="36" selection-end-column="65" />
+            <state relative-caret-position="504">
+              <caret line="39" column="14" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="39" selection-end-column="14" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/domains/adminPages/LoginAdminPage.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -228,7 +246,8 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/project" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -246,7 +265,6 @@
         <option value="$PROJECT_DIR$/src/domains/adminPages/AdminPage.js" />
         <option value="$PROJECT_DIR$/src/domains/adminPages/user.js" />
         <option value="$PROJECT_DIR$/src/domains/adminPages/post.js" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/../OSPanel/domains/mesto/src/components/pages/CreateNewApartment.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/domains/adminPages/inputBlock.css" />
@@ -261,23 +279,24 @@
         <option value="$PROJECT_DIR$/src/domains/pages/Header.js" />
         <option value="$PROJECT_DIR$/src/domains/PagesStyle/Header.css" />
         <option value="$PROJECT_DIR$/src/domains/PagesStyle/Courses.css" />
-        <option value="$PROJECT_DIR$/src/domains/pages/StartCourses.js" />
         <option value="$PROJECT_DIR$/src/domains/PagesStyle/StartCours.css" />
         <option value="$PROJECT_DIR$/src/domains/PagesStyle/Form.css" />
         <option value="$PROJECT_DIR$/src/domains/MainPage.js" />
         <option value="$PROJECT_DIR$/src/domains/PagesStyle/Footer.css" />
-        <option value="$PROJECT_DIR$/src/domains/pages/News.js" />
         <option value="$PROJECT_DIR$/src/domains/PagesStyle/News.css" />
         <option value="$PROJECT_DIR$/src/domains/PagesStyle/ProgramCours.css" />
         <option value="$PROJECT_DIR$/src/domains/PagesStyle/PagesStyle.css" />
         <option value="$PROJECT_DIR$/src/domains/adminPages/LoginAdminPage.js" />
         <option value="$PROJECT_DIR$/src/domains/adminPages/TestAdmin.js" />
-        <option value="$PROJECT_DIR$/src/domains/pages/Commidoncours.js" />
-        <option value="$PROJECT_DIR$/src/domains/pages/Courses.js" />
-        <option value="$PROJECT_DIR$/src/domains/pages/ProgramCours.js" />
         <option value="$PROJECT_DIR$/src/domains/pages/Footer.js" />
         <option value="$PROJECT_DIR$/src/domains/pages/HeaderNavigation.js" />
         <option value="$PROJECT_DIR$/src/domains/adminPages/AdminPageStyle.css" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/src/domains/pages/ProgramCours.js" />
+        <option value="$PROJECT_DIR$/src/domains/pages/Commidoncours.js" />
+        <option value="$PROJECT_DIR$/src/domains/pages/News.js" />
+        <option value="$PROJECT_DIR$/src/domains/pages/Courses.js" />
+        <option value="$PROJECT_DIR$/src/domains/pages/StartCourses.js" />
         <option value="$PROJECT_DIR$/src/domains/adminPages/AdminPanel.js" />
       </list>
     </option>
@@ -360,6 +379,13 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="domains" type="462c0819:PsiDirectoryNode" />
               <item name="adminPages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="antschool" type="b2602c69:ProjectViewProjectNode" />
+              <item name="antschool" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="domains" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -457,12 +483,12 @@
       <workItem from="1537425960708" duration="599000" />
       <workItem from="1537453551463" duration="599000" />
       <workItem from="1537508824047" duration="38000" />
-      <workItem from="1537512345688" duration="1247000" />
+      <workItem from="1537512345688" duration="15949000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="228108000" />
+    <option name="totallyTimeSpent" value="242810000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -477,7 +503,7 @@
     <frame x="51" y="25" width="1869" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2117389" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2117389" />
       <window_info id="Structure" order="1" weight="0.2495886" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -490,7 +516,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32922733" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4991772" visible="true" weight="0.44420367" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.4991772" visible="true" weight="0.18743229" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50082284" side_tool="true" weight="0.108342364" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="TypeScript" order="11" />
@@ -531,141 +557,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/domains/adminPages/AdminNews.js" />
-    <entry file="file://$PROJECT_DIR$/src/domains/adminPages/user.js" />
-    <entry file="file://$PROJECT_DIR$/src/domains/adminPages/post.js" />
-    <entry file="file://$PROJECT_DIR$/src/domains/adminPages/AdminStartCourses.js" />
-    <entry file="file://$PROJECT_DIR$/src/domains/adminPages/AdminProgramCours.js" />
-    <entry file="file://$PROJECT_DIR$/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="19" column="3" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/domains/adminPages/AdminPageStyle/inputBlock.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="11" selection-start-column="11" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="13" column="132" selection-start-line="13" selection-start-column="132" selection-end-line="13" selection-end-column="132" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/domains/PagesStyle/Commidoncours.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="127" column="37" lean-forward="true" selection-start-line="127" selection-start-column="37" selection-end-line="127" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/domains/PagesStyle/AboutAs.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="62" column="30" lean-forward="true" selection-start-line="62" selection-start-column="30" selection-end-line="62" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/domains/PagesStyle/Header.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="56" column="21" lean-forward="true" selection-start-line="56" selection-start-column="21" selection-end-line="56" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/domains/PagesStyle/Courses.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="81" column="19" lean-forward="true" selection-start-line="81" selection-start-column="19" selection-end-line="81" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/domains/pages/StartCourses.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="2" column="32" lean-forward="true" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/domains/PagesStyle/StartCours.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="54" column="19" selection-start-line="54" selection-start-column="19" selection-end-line="54" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/domains/PagesStyle/Form.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="48" column="19" selection-start-line="48" selection-start-column="19" selection-end-line="48" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/domains/pages/Header.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="1" column="29" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/domains/PagesStyle/News.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="7" column="23" lean-forward="true" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/domains/pages/News.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="50" column="17" lean-forward="true" selection-start-line="50" selection-start-column="17" selection-end-line="50" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/domains/PagesStyle/ProgramCours.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="41">
-          <caret line="26" column="23" lean-forward="true" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/domains/PagesStyle/PagesStyle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4760">
-          <caret line="170" column="25" selection-start-line="170" selection-start-column="25" selection-end-line="170" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/domains/PagesStyle/Footer.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/09e0da5f-828b-4103-b61e-a549607f901f/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/2667cadb-d601-462b-972c-4b5af813689b/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="das://2667cadb-d601-462b-972c-4b5af813689b/schema/projects/table/abouts" />
-    <entry file="das://2667cadb-d601-462b-972c-4b5af813689b/schema/projects/table/clients" />
-    <entry file="das://2667cadb-d601-462b-972c-4b5af813689b/schema/projects/table/contacts" />
-    <entry file="das://2667cadb-d601-462b-972c-4b5af813689b/schema/projects/table/course_fronts" />
-    <entry file="das://2667cadb-d601-462b-972c-4b5af813689b/schema/projects/table/course_phps" />
     <entry file="das://2667cadb-d601-462b-972c-4b5af813689b/schema/projects/table/program_twos" />
     <entry file="das://2667cadb-d601-462b-972c-4b5af813689b/schema/projects/table/users" />
     <entry file="das://2667cadb-d601-462b-972c-4b5af813689b/schema/projects/table/program_ones" />
@@ -680,40 +571,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="924">
-          <caret line="33" column="34" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/domains/pages/Courses.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1512">
-          <caret line="54" column="19" selection-start-line="54" selection-start-column="19" selection-end-line="54" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/domains/pages/ProgramCours.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1456">
-          <caret line="52" column="40" selection-start-line="52" selection-start-column="40" selection-end-line="52" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/domains/MainPage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="698">
-          <caret line="46" column="27" selection-start-line="46" selection-start-column="27" selection-end-line="46" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/domains/pages/Form.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="644">
@@ -724,20 +581,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/domains/pages/AdminPage.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/domains/pages/AboutAs.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="698">
           <caret line="30" column="55" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/domains/pages/Commidoncours.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="698">
-          <caret line="59" column="46" selection-start-line="59" selection-start-column="46" selection-end-line="59" selection-end-column="46" />
         </state>
       </provider>
     </entry>
@@ -771,7 +618,241 @@
     <entry file="file://$PROJECT_DIR$/src/domains/pages/Footer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1064">
-          <caret line="38" column="24" lean-forward="true" selection-start-line="38" selection-start-column="24" selection-end-line="38" selection-end-column="24" />
+          <caret line="38" column="24" selection-start-line="38" selection-start-column="24" selection-end-line="38" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/05c41855-c30c-48f3-83d8-6cc0aee8b9a7/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="30" column="22" lean-forward="true" selection-start-line="30" selection-start-column="22" selection-end-line="31" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://05c41855-c30c-48f3-83d8-6cc0aee8b9a7/schema/projects/table/users">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://05c41855-c30c-48f3-83d8-6cc0aee8b9a7/schema/projects/table/abouts">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://05c41855-c30c-48f3-83d8-6cc0aee8b9a7/schema/projects/table/clients">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://05c41855-c30c-48f3-83d8-6cc0aee8b9a7/schema/projects/table/contacts">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://05c41855-c30c-48f3-83d8-6cc0aee8b9a7/schema/projects/table/course_fronts">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://05c41855-c30c-48f3-83d8-6cc0aee8b9a7/schema/projects/table/course_phps">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://05c41855-c30c-48f3-83d8-6cc0aee8b9a7/schema/projects/table/data">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://05c41855-c30c-48f3-83d8-6cc0aee8b9a7/schema/projects/table/image_news">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://05c41855-c30c-48f3-83d8-6cc0aee8b9a7/schema/projects/table/news">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/c51dbee6-a515-4a1f-9c5a-ffa3adc7cf00/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/c78edc31-7e5f-4f16-a7d7-8e4cf9828d94/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="das://c78edc31-7e5f-4f16-a7d7-8e4cf9828d94/schema/projects/table/clients">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://c78edc31-7e5f-4f16-a7d7-8e4cf9828d94/schema/projects/table/contacts">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://c78edc31-7e5f-4f16-a7d7-8e4cf9828d94/schema/projects/table/course_fronts">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://c78edc31-7e5f-4f16-a7d7-8e4cf9828d94/schema/projects/table/course_phps">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://c78edc31-7e5f-4f16-a7d7-8e4cf9828d94/schema/projects/table/data">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://c78edc31-7e5f-4f16-a7d7-8e4cf9828d94/schema/projects/table/image_news">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://c78edc31-7e5f-4f16-a7d7-8e4cf9828d94/schema/projects/table/migrations">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://c78edc31-7e5f-4f16-a7d7-8e4cf9828d94/schema/projects/table/news">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://c78edc31-7e5f-4f16-a7d7-8e4cf9828d94/schema/projects/table/abouts">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://c78edc31-7e5f-4f16-a7d7-8e4cf9828d94/schema/projects/table/users">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://c78edc31-7e5f-4f16-a7d7-8e4cf9828d94/schema/projects/table/program_ones">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://c78edc31-7e5f-4f16-a7d7-8e4cf9828d94/schema/projects/table/program_twos">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://883f7d47-a073-4a2c-8619-eed9accfd0f7/schema/projects/table/program_twos">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://883f7d47-a073-4a2c-8619-eed9accfd0f7/schema/projects/table/program_ones">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/883f7d47-a073-4a2c-8619-eed9accfd0f7/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/domains/pages/AdminPage.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/domains/pages/News.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="952">
+          <caret line="34" column="20" lean-forward="true" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/domains/MainPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="51" column="21" lean-forward="true" selection-start-line="51" selection-start-column="21" selection-end-line="51" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/domains/pages/Commidoncours.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1260">
+          <caret line="51" column="31" lean-forward="true" selection-start-line="51" selection-start-column="31" selection-end-line="51" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/domains/pages/StartCourses.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/domains/pages/Courses.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="19" column="13" lean-forward="true" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/domains/pages/ProgramCours.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="39" column="14" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="39" selection-end-column="14" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
@@ -780,10 +861,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/domains/adminPages/AdminPanel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="-1092">
+          <caret line="120" column="21" selection-start-line="120" selection-start-column="21" selection-end-line="120" selection-end-column="21" />
           <folding>
             <element signature="e#0#72#0" expanded="true" />
+            <element signature="e#7836#9771#0" />
+            <element signature="e#9819#11342#0" />
           </folding>
         </state>
       </provider>

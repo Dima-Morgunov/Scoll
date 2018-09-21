@@ -15,14 +15,6 @@ class Courses extends Component{
             }
         }
 
-
-          /*  col: "6 месяцев"
-            created_at: "2018-09-13 16:15:59"
-            days: "3 раза в неделю"
-            id: 1
-            month: "НОЯБРЬ 2018"
-            time: "18.30 - 21.30"
-            }*/
             getData = () =>{
             return axios.get(`/data`)
             }
