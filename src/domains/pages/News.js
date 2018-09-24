@@ -60,19 +60,25 @@ class News extends Component{
         ],
     }
 
+    getNewsFromState = () =>{
+        for (let i = 0; i > this.state.newsElement.length; i++){
+
+        }
+        this.state.newsElement
+    }
+
     getNews = () =>{
         return axios.get(`/news`)
     }
     componentDidMount() {
         this.getNews()
             .then(result => {
-                console.log(result.data[0])
+                console.log(this.state.newsElement)
                 this.setState({
 
                 })
             })
     }
-
     render(){
 
         const {newsElement} = this.state
@@ -93,28 +99,27 @@ class News extends Component{
             <Slider {...settings}>
                 {
                     newsElement.map(e => (
-                <div>
-            <div className='News-wrap'>
-                <p className='News-wrap-background'>Новости</p>
-                <div className="News">
-                    <h3>Новости</h3>
-                    <div className="News-conteiner">
-                        <div className="News-conteiner-img">
-                            <img src={photo1} alt='!'/>
-                            <img src={photo2} alt='!'/>
-                        </div>
-                        <div className="News-conteiner-decript">
-                            <div>
-                                <p>{e.newsTitlle}</p>
-                                <span>{e.newsDeskription1}</span>
-                                <span>{e.newsDeskription2}</span>
+                        <div>
+                            <div className='News-wrap'>
+                                <p className='News-wrap-background'>Новости</p>
+                                <div className="News">
+                                    <h3>Новости</h3>
+                                    <div className="News-conteiner">
+                                        <div className="News-conteiner-img">
+                                            <img src={photo1} alt='!'/>
+                                            <img src={photo2} alt='!'/>
+                                        </div>
+                                        <div className="News-conteiner-decript">
+                                            <div>
+                                                <p>123{e.title}</p>
+                                                <span>{e.text_1}</span>
+                                                <span>{e.text_2}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-
-                </div>
                     ))
                 }
             </Slider>
