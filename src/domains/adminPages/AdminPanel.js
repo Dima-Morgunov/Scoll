@@ -1,11 +1,10 @@
-import React, {Component, ReactChildren as firstParagraph} from 'react';
+import React, { Component } from 'react';
 import { Tab, Input, TextArea, Button } from 'semantic-ui-react'
 import axios from  "axios"
 import LoginAdminPage from "./LoginAdminPage";
 import './AdminPageStyle/inputBlock.css'
 
 class AdminPanel extends Component{
-
 
     state = {
         // блок новостей
@@ -170,7 +169,6 @@ class AdminPanel extends Component{
                         descriptSecondTittleCours: result.data[0].title,
                         descriptSecondCours: result.data[0].text,
                     }
-
                 })
             })
     }
@@ -239,7 +237,6 @@ class AdminPanel extends Component{
     }
     onAddSecondModule = () =>{
         var newArr = this.state.secondParagraph
-
         newArr.push({
             id: this.getRandomInt(1, 99999999),
             name: this.getRandomInt(1, 99999999),
@@ -276,7 +273,6 @@ class AdminPanel extends Component{
             newsElement: newArr
         })
     }
-
     ChangeData = () =>{
         console.log(this.state.data)
         axios({
@@ -289,7 +285,6 @@ class AdminPanel extends Component{
                 console.log(result);
             })
     }
-
     onChangeFirstBlock = event => {
         var arrId = event.target.id
         var el = this.state.firstParagraph.filter(e => {if(e.id === arrId) return e})
@@ -305,7 +300,6 @@ class AdminPanel extends Component{
         this.setState({
             firstParagraph: newArr
         })
-
     }
     onChangeSecondBlock = event => {
         var arrId = event.target.id
@@ -322,7 +316,6 @@ class AdminPanel extends Component{
         this.setState({
             secondParagraph: newArr
         })
-
     }
     onChangeStartCoursesDescript = event => {
         var arrId = event.target.id
@@ -339,7 +332,6 @@ class AdminPanel extends Component{
         this.setState({
             startCoursesDescript: newArr
         })
-
     }
     onChangeNewsElementTittle = event => {
         var arrId = event.target.id
@@ -356,7 +348,6 @@ class AdminPanel extends Component{
         this.setState({
             newsElement: newArr
         })
-
     }
     onChangeNewsElementDescript = event => {
         var arrId = event.target.id
@@ -526,10 +517,8 @@ class AdminPanel extends Component{
                             value={data.lessonDuration}
                             onChange={this.onChange}
                         />
-
                         <p>Применить изменения</p>
                         <Button onClick={this.ChangeData}>Update</Button>
-
                     </Tab.Pane> },
         ]
         // 1й блок
@@ -575,7 +564,6 @@ class AdminPanel extends Component{
 
                     </Tab.Pane> },
             { menuItem: 'Курсы №2', render: () => <Tab.Pane>
-
                     <p>Начало курса</p>
                     <Input
                         placeholder='Начало курса'
@@ -609,10 +597,8 @@ class AdminPanel extends Component{
                     />
                     <p>Применить изменения</p>
                     <Button onClick={this.ChangeData}>Update</Button>
-
                 </Tab.Pane> },
         ]
-
         const panes = [
             { menuItem: 'Курсы', render: () => <Tab.Pane>
                     <Tab panes={Courses_menu} />
@@ -640,7 +626,6 @@ class AdminPanel extends Component{
                     <Tab menu={{ fluid: true, vertical: true, tabular: true }} panes={panes} />
                 }
             </div>
-
         )
     }
 }

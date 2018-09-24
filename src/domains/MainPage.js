@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import {Route} from "react-router-dom";
 import HeaderNavigation from './pages/HeaderNavigation'
 import Header from './pages/Header'
 import AboutAs from './pages/AboutAs'
@@ -11,12 +10,7 @@ import Footer from './pages/Footer'
 import Commidoncours from './pages/Commidoncours'
 import FormPage from './pages/Form'
 
-
-
-
-
 import scrollToComponent from 'react-scroll-to-component';
-
 
 class MainPage extends Component{
 
@@ -47,8 +41,8 @@ class MainPage extends Component{
     render(){
         return(
             <div>
-                <HeaderNavigation  scrollTo ={this.scrollFunc} />
-                <Header ref={(section) => { this.Header = section; }} scrollTo ={this.scrollFunc} />
+                <HeaderNavigation ref={(section) => { this.Header = section; }} scrollTo ={this.scrollFunc} />
+                <Header  scrollTo ={this.scrollFunc} />
                 <AboutAs  scrollTo ={this.scrollFunc} ref={(section) => { this.AboutAs = section; }}/>
                 <Commidoncours/>
                 <Courses scrollTo ={this.scrollFunc} ref={(section) => { this.Courses = section; }}/>
@@ -58,10 +52,7 @@ class MainPage extends Component{
                 <News ref={(section) => { this.News = section; }}/>
                 <Footer scrollTo ={this.scrollFunc} ref={(section) => { this.Contacts = section; }}/>
             </div>
-
-
         )
-}
-}
+}}
 
 export default MainPage

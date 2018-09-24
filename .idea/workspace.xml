@@ -2,10 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f98869e-3a95-4365-8337-63efddcc15d9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/05c41855-c30c-48f3-83d8-6cc0aee8b9a7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2667cadb-d601-462b-972c-4b5af813689b.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/883f7d47-a073-4a2c-8619-eed9accfd0f7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c51dbee6-a515-4a1f-9c5a-ffa3adc7cf00.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c78edc31-7e5f-4f16-a7d7-8e4cf9828d94.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/domains/MainPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/MainPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domains/PagesStyle/PagesStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/PagesStyle/PagesStyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domains/pages/HeaderNavigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/pages/HeaderNavigation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/adminPages/AdminPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/adminPages/AdminPanel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/pages/News.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/pages/News.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -31,17 +38,6 @@
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="projects@localhost" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="projects@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="projects@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="projects: schema" type="c314c289:MysqlImplModel$Schema" />
       </path>
     </expand>
     <select />
@@ -104,7 +100,8 @@
     <session id="-991325195">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="13" />
+          <entry key="project.closed" value="15" />
+          <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="3" />
           <entry key="project.open.time.10" value="2" />
           <entry key="project.open.time.2" value="2" />
@@ -112,17 +109,17 @@
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.7" value="7" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.open.time.9" value="2" />
-          <entry key="project.opened" value="19" />
+          <entry key="project.open.time.9" value="3" />
+          <entry key="project.opened" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="298" />
           <entry key="html" value="2" />
-          <entry key="js" value="7366" />
+          <entry key="js" value="7381" />
           <entry key="json" value="5" />
-          <entry key="txt" value="16" />
+          <entry key="txt" value="24" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -130,8 +127,8 @@
           <entry key="CSS" value="298" />
           <entry key="HTML" value="2" />
           <entry key="JSON" value="5" />
-          <entry key="JavaScript" value="7366" />
-          <entry key="PLAIN_TEXT" value="16" />
+          <entry key="JavaScript" value="7381" />
+          <entry key="PLAIN_TEXT" value="24" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -141,32 +138,32 @@
           <entry key="contacts" value="3" />
           <entry key="course_fronts" value="3" />
           <entry key="course_phps" value="3" />
-          <entry key="css" value="22" />
+          <entry key="css" value="23" />
           <entry key="data" value="3" />
           <entry key="html" value="1" />
           <entry key="ico" value="1" />
           <entry key="image_news" value="3" />
-          <entry key="js" value="80" />
+          <entry key="js" value="83" />
           <entry key="json" value="4" />
           <entry key="migrations" value="2" />
-          <entry key="news" value="3" />
+          <entry key="news" value="4" />
           <entry key="program_ones" value="3" />
           <entry key="program_twos" value="4" />
           <entry key="rnc" value="1" />
-          <entry key="sql" value="5" />
+          <entry key="sql" value="6" />
           <entry key="users" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="22" />
-          <entry key="Database Element" value="37" />
+          <entry key="CSS" value="23" />
+          <entry key="Database Element" value="38" />
           <entry key="HTML" value="1" />
           <entry key="Image" value="1" />
           <entry key="JSON" value="4" />
-          <entry key="JavaScript" value="80" />
+          <entry key="JavaScript" value="83" />
           <entry key="RNG Compact" value="1" />
-          <entry key="Scratch" value="5" />
+          <entry key="Scratch" value="6" />
         </counts>
       </usages-collector>
     </session>
@@ -176,22 +173,62 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/domains/adminPages/AdminPanel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3846">
-              <caret line="635" column="9" lean-forward="true" selection-start-line="635" selection-start-column="9" selection-end-line="635" selection-end-column="9" />
-              <folding>
-                <element signature="e#0#72#0" expanded="true" />
-                <element signature="e#7836#9771#0" />
-                <element signature="e#9819#11342#0" />
-              </folding>
+            <state relative-caret-position="196">
+              <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="16" selection-end-column="38" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/domains/pages/News.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="980">
+              <caret line="40" column="50" lean-forward="true" selection-start-line="40" selection-start-column="50" selection-end-line="40" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/domains/MainPage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="40" column="45" selection-start-line="40" selection-start-column="45" selection-end-line="40" selection-end-column="45" />
+            <state relative-caret-position="1596">
+              <caret line="57" column="23" selection-start-line="57" selection-start-column="23" selection-end-line="57" selection-end-column="23" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/domains/pages/Header.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="112">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/domains/pages/HeaderNavigation.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="784">
+              <caret line="28" column="26" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/domains/PagesStyle/PagesStyle.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="1" selection-start-column="1" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -256,14 +293,14 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/domains/pages/ProgramCours.js" />
         <option value="$PROJECT_DIR$/src/domains/pages/Commidoncours.js" />
-        <option value="$PROJECT_DIR$/src/domains/pages/News.js" />
         <option value="$PROJECT_DIR$/src/domains/pages/Courses.js" />
         <option value="$PROJECT_DIR$/src/domains/pages/StartCourses.js" />
+        <option value="$PROJECT_DIR$/src/domains/PagesStyle/PagesStyle.css" />
         <option value="$PROJECT_DIR$/src/domains/adminPages/AdminPanel.js" />
         <option value="$PROJECT_DIR$/src/domains/pages/Header.js" />
-        <option value="$PROJECT_DIR$/src/domains/pages/HeaderNavigation.js" />
         <option value="$PROJECT_DIR$/src/domains/MainPage.js" />
-        <option value="$PROJECT_DIR$/src/domains/PagesStyle/PagesStyle.css" />
+        <option value="$PROJECT_DIR$/src/domains/pages/HeaderNavigation.js" />
+        <option value="$PROJECT_DIR$/src/domains/pages/News.js" />
       </list>
     </option>
   </component>
@@ -285,10 +322,10 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="286" />
-    <option name="y" value="27" />
-    <option name="width" value="1430" />
-    <option name="height" value="675" />
+    <option name="x" value="51" />
+    <option name="y" value="25" />
+    <option name="width" value="1869" />
+    <option name="height" value="1055" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -344,21 +381,7 @@
               <item name="antschool" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="domains" type="462c0819:PsiDirectoryNode" />
-              <item name="adminPages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="antschool" type="b2602c69:ProjectViewProjectNode" />
-              <item name="antschool" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="domains" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="antschool" type="b2602c69:ProjectViewProjectNode" />
-              <item name="antschool" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="domains" type="462c0819:PsiDirectoryNode" />
-              <item name="PagesStyle" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -456,12 +479,14 @@
       <workItem from="1537425960708" duration="599000" />
       <workItem from="1537453551463" duration="599000" />
       <workItem from="1537508824047" duration="38000" />
-      <workItem from="1537512345688" duration="17969000" />
+      <workItem from="1537512345688" duration="18292000" />
+      <workItem from="1537771112327" duration="4009000" />
+      <workItem from="1537797595617" duration="1457000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="244830000" />
+    <option name="totallyTimeSpent" value="250619000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -474,9 +499,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="51" y="25" width="1869" height="1055" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2117389" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21612726" />
       <window_info id="Structure" order="1" weight="0.2495886" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -489,8 +513,8 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32922733" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.4991772" visible="true" weight="0.18743229" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50082284" side_tool="true" weight="0.108342364" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.49862865" visible="true" weight="0.18634886" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5013714" side_tool="true" weight="0.18634886" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="TypeScript" order="11" />
       <window_info anchor="bottom" id="Database Console" order="12" weight="0.32936078" />
@@ -530,8 +554,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="das://2667cadb-d601-462b-972c-4b5af813689b/schema/projects/table/image_news" />
-    <entry file="das://2667cadb-d601-462b-972c-4b5af813689b/schema/projects/table/data" />
     <entry file="file://$PROJECT_DIR$/src/domains/adminPages/TestAdmin.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -543,15 +565,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="644">
           <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/domains/adminPages/AdminPageStyle.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/domains/adminPages/AdminPageStyle.css" />
     <entry file="file://$PROJECT_DIR$/src/domains/adminPages/AdminPageStyle/AdminLoginPage.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
@@ -576,189 +593,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://05c41855-c30c-48f3-83d8-6cc0aee8b9a7/schema/projects/table/users">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://05c41855-c30c-48f3-83d8-6cc0aee8b9a7/schema/projects/table/abouts">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://05c41855-c30c-48f3-83d8-6cc0aee8b9a7/schema/projects/table/clients">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://05c41855-c30c-48f3-83d8-6cc0aee8b9a7/schema/projects/table/contacts">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://05c41855-c30c-48f3-83d8-6cc0aee8b9a7/schema/projects/table/course_fronts">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://05c41855-c30c-48f3-83d8-6cc0aee8b9a7/schema/projects/table/course_phps">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://05c41855-c30c-48f3-83d8-6cc0aee8b9a7/schema/projects/table/data">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://05c41855-c30c-48f3-83d8-6cc0aee8b9a7/schema/projects/table/image_news">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://05c41855-c30c-48f3-83d8-6cc0aee8b9a7/schema/projects/table/news">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://05c41855-c30c-48f3-83d8-6cc0aee8b9a7/schema/projects/table/users" />
+    <entry file="das://05c41855-c30c-48f3-83d8-6cc0aee8b9a7/schema/projects/table/abouts" />
+    <entry file="das://05c41855-c30c-48f3-83d8-6cc0aee8b9a7/schema/projects/table/clients" />
+    <entry file="das://05c41855-c30c-48f3-83d8-6cc0aee8b9a7/schema/projects/table/contacts" />
+    <entry file="das://05c41855-c30c-48f3-83d8-6cc0aee8b9a7/schema/projects/table/course_fronts" />
+    <entry file="das://05c41855-c30c-48f3-83d8-6cc0aee8b9a7/schema/projects/table/course_phps" />
+    <entry file="das://05c41855-c30c-48f3-83d8-6cc0aee8b9a7/schema/projects/table/data" />
+    <entry file="das://05c41855-c30c-48f3-83d8-6cc0aee8b9a7/schema/projects/table/image_news" />
+    <entry file="das://05c41855-c30c-48f3-83d8-6cc0aee8b9a7/schema/projects/table/news" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/c51dbee6-a515-4a1f-9c5a-ffa3adc7cf00/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/c78edc31-7e5f-4f16-a7d7-8e4cf9828d94/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="das://c78edc31-7e5f-4f16-a7d7-8e4cf9828d94/schema/projects/table/clients">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://c78edc31-7e5f-4f16-a7d7-8e4cf9828d94/schema/projects/table/contacts">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://c78edc31-7e5f-4f16-a7d7-8e4cf9828d94/schema/projects/table/course_fronts">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://c78edc31-7e5f-4f16-a7d7-8e4cf9828d94/schema/projects/table/course_phps">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://c78edc31-7e5f-4f16-a7d7-8e4cf9828d94/schema/projects/table/data">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://c78edc31-7e5f-4f16-a7d7-8e4cf9828d94/schema/projects/table/image_news">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://c78edc31-7e5f-4f16-a7d7-8e4cf9828d94/schema/projects/table/migrations">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://c78edc31-7e5f-4f16-a7d7-8e4cf9828d94/schema/projects/table/news">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://c78edc31-7e5f-4f16-a7d7-8e4cf9828d94/schema/projects/table/abouts">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://c78edc31-7e5f-4f16-a7d7-8e4cf9828d94/schema/projects/table/users">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://c78edc31-7e5f-4f16-a7d7-8e4cf9828d94/schema/projects/table/program_ones">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://c78edc31-7e5f-4f16-a7d7-8e4cf9828d94/schema/projects/table/program_twos">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://883f7d47-a073-4a2c-8619-eed9accfd0f7/schema/projects/table/program_twos">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://883f7d47-a073-4a2c-8619-eed9accfd0f7/schema/projects/table/program_ones">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://c78edc31-7e5f-4f16-a7d7-8e4cf9828d94/schema/projects/table/clients" />
+    <entry file="das://c78edc31-7e5f-4f16-a7d7-8e4cf9828d94/schema/projects/table/contacts" />
+    <entry file="das://c78edc31-7e5f-4f16-a7d7-8e4cf9828d94/schema/projects/table/course_fronts" />
+    <entry file="das://c78edc31-7e5f-4f16-a7d7-8e4cf9828d94/schema/projects/table/course_phps" />
+    <entry file="das://c78edc31-7e5f-4f16-a7d7-8e4cf9828d94/schema/projects/table/data" />
+    <entry file="das://c78edc31-7e5f-4f16-a7d7-8e4cf9828d94/schema/projects/table/image_news" />
+    <entry file="das://c78edc31-7e5f-4f16-a7d7-8e4cf9828d94/schema/projects/table/migrations" />
+    <entry file="das://c78edc31-7e5f-4f16-a7d7-8e4cf9828d94/schema/projects/table/news" />
+    <entry file="das://c78edc31-7e5f-4f16-a7d7-8e4cf9828d94/schema/projects/table/abouts" />
+    <entry file="das://c78edc31-7e5f-4f16-a7d7-8e4cf9828d94/schema/projects/table/users" />
+    <entry file="das://c78edc31-7e5f-4f16-a7d7-8e4cf9828d94/schema/projects/table/program_ones" />
+    <entry file="das://c78edc31-7e5f-4f16-a7d7-8e4cf9828d94/schema/projects/table/program_twos" />
+    <entry file="das://883f7d47-a073-4a2c-8619-eed9accfd0f7/schema/projects/table/program_twos" />
+    <entry file="das://883f7d47-a073-4a2c-8619-eed9accfd0f7/schema/projects/table/program_ones" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/883f7d47-a073-4a2c-8619-eed9accfd0f7/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/domains/pages/AdminPage.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/domains/pages/News.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="952">
-          <caret line="34" column="20" lean-forward="true" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/domains/pages/AdminPage.js" />
     <entry file="file://$PROJECT_DIR$/src/domains/pages/Commidoncours.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1260">
@@ -772,18 +639,6 @@
     <entry file="file://$PROJECT_DIR$/public/manifest.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/domains/adminPages/AdminPanel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3846">
-          <caret line="635" column="9" lean-forward="true" selection-start-line="635" selection-start-column="9" selection-end-line="635" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#72#0" expanded="true" />
-            <element signature="e#7836#9771#0" />
-            <element signature="e#9819#11342#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/webstorm.jar!/resources/html5-schema/html5/embed.rnc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="235">
@@ -791,30 +646,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/domains/PagesStyle/PagesStyle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="728">
-          <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/domains/pages/HeaderNavigation.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="46" column="90" lean-forward="true" selection-start-line="46" selection-start-column="90" selection-end-line="46" selection-end-column="90" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/domains/pages/ProgramCours.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
           <caret line="39" column="14" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="39" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -822,9 +657,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="532">
           <caret line="19" column="13" lean-forward="true" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -839,6 +671,37 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
           <caret line="30" column="23" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/domains/pages/Footer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-252">
+          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://883f7d47-a073-4a2c-8619-eed9accfd0f7/schema/projects/table/news">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/ccf3598d-0d5d-4637-8884-7300fa31d418/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/domains/adminPages/AdminPanel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="16" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/domains/MainPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1596">
+          <caret line="57" column="23" selection-start-line="57" selection-start-column="23" selection-end-line="57" selection-end-column="23" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
@@ -847,25 +710,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/domains/pages/Header.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/domains/pages/Footer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-252">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+        <state relative-caret-position="112">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/domains/MainPage.js">
+    <entry file="file://$PROJECT_DIR$/src/domains/pages/HeaderNavigation.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="40" column="45" selection-start-line="40" selection-start-column="45" selection-end-line="40" selection-end-column="45" />
+        <state relative-caret-position="784">
+          <caret line="28" column="26" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/domains/PagesStyle/PagesStyle.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="1" selection-start-column="1" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/domains/pages/News.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="980">
+          <caret line="40" column="50" lean-forward="true" selection-start-line="40" selection-start-column="50" selection-end-line="40" selection-end-column="50" />
         </state>
       </provider>
     </entry>
