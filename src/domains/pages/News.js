@@ -60,13 +60,6 @@ class News extends Component{
         ],
     }
 
-    getNewsFromState = () =>{
-        for (let i = 0; i > this.state.newsElement.length; i++){
-
-        }
-        this.state.newsElement
-    }
-
     getNews = () =>{
         return axios.get(`/news`)
     }

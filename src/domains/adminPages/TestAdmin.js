@@ -21,12 +21,10 @@ import LoginAdminPage from "./LoginAdminPage";
 
          return(
              <div>
-                 {isLogin ?
+                 {localStorage.getItem(`token`) ?
                      <AdminPanel />
                      :
                      <LoginAdminPage submit={this.onSubmit}/>}
-
-                 <AdminPanel />
              </div>
          )
 

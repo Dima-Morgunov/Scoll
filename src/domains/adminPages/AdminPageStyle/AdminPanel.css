@@ -1,0 +1,23 @@
+.Courses-textArea{
+    min-width: 400px;
+    min-height: 120px;
+}
+.News-TitletexrArea{
+    min-width: 500px;
+    min-height: 50px;
+    margin: 0 0;
+}
+.News-DescriptTexrArea{
+    min-width: 500px;
+    min-height: 150px;
+    margin: 0 0;
+}
+.News-image{
+    max-width: 570px;
+    width: 100%;
+}
+.News-image img{
+    max-width: 285px;
+    width: 100%;
+    padding-bottom: 50px;
+}

@@ -1,83 +1,35 @@
 import React, { Component } from 'react';
 import { Tab, Input, TextArea, Button } from 'semantic-ui-react'
 import axios from  "axios"
-import LoginAdminPage from "./LoginAdminPage";
 import './AdminPageStyle/inputBlock.css'
+import './AdminPageStyle/AdminPanel.css'
 
 class AdminPanel extends Component{
 
     state = {
         // блок новостей
-        newsElement: [{
-            id: 1,
-            photo1: 1,
-            photo2: 1,
-            newsTitlle: '12312',
-            newsDeskription1: '23322',
-            newsDeskription2: '23322',
-        },{
-            id: 2,
-            photo1: 1,
-            photo2: 1,
-            newsTitlle: '12312',
-            newsDeskription1: '23322',
-            newsDeskription2: '23322',
-        },{
-            id: 3,
-            photo1: 1,
-            photo2: 1,
-            newsTitlle: '12312',
-            newsDeskription1: '23322',
-            newsDeskription2: '23322',
-        }],
-
+        newsElement: null,
         // 4й блок
-        startCoursesDescript: [{
-            id: 1,
-            text: '12312',
-        },{
-            id: 2,
-            text: '12312',
-        },{
-            id: 3,
-            text: '12312',
-        },
-        ],
-
+        startCoursesDescript: '',
         // 3й блок
-        secondParagraph:null,
-        firstParagraph:[{
-            id: 1,
-            text:'aaaa'
-        },{
-            id: 2,
-            text:'sssss'
-        },{
-            id: 3,
-            text:'cccc'
-        },{
-            id: 4,
-            text:''
-        },{
-            id: 5,
-            text:''
-        }],
+        secondParagraph:'',
+        firstParagraph:'',
 
         data: {
             //1й блок
             numChildren: 0,
-            startFistCours:null,
-            levelFirstCours:null,
-            descriptFirstTittleCours:null,
-            descriptFirstCours:null,
-            startSecondCours:null,
-            levelSecondCours:null,
-            descriptSecondTittleCours:null,
+            startFistCours:'',
+            levelFirstCours:'',
+            descriptFirstTittleCours:'',
+            descriptFirstCours:'',
+            startSecondCours:'',
+            levelSecondCours:'',
+            descriptSecondTittleCours:'',
             //2й блок
-            drationCourses:null,
-            monthBeginningCourses:null,
-            numberOfTimes:null,
-            lessonDuration:null,
+            drationCourses:'',
+            monthBeginningCourses:'',
+            numberOfTimes:'',
+            lessonDuration:'',
             //3й блок
 
             //4й блок
@@ -102,26 +54,56 @@ class AdminPanel extends Component{
     getProgramTwo = () =>{
         return axios.get(`/program-two`)
     }
+    // Гет запрос на 4й блок
+    getStartCoursesData = () =>{
+        return axios.get(`/clients`)
+    }
+    // Гет запрос на 5й блок
+    getNews = () =>{
+        return axios.get(`/news`)
+    }
     componentDidMount() {
+        this.getNews()
+            .then(result => {
+                console.log(result)
+                console.log(result.data[0].images[0].image)
+                this.setState({
+                    newsElement: result.data
+                })
+            })
+        this.getStartCoursesData()
+            .then(result => {
+                let responsData = []
+                for (var key in result.data[0]){
+                    if(key !== 'id' && key !== 'created_at'  && key !== 'updated_at' && key !== 'seats')
+                        responsData.push(result.data[0][key])
+                }
+                let arrayObj = []
+                for (let i = 0; i < responsData.length; i++){
+                    if (responsData.length !==undefined){
+                        arrayObj.push({id: i, text: responsData[i]})
+                    }
+                }
+                this.setState({
+                    startCoursesDescript: arrayObj,
+                    freePlacesCount: result.data[0].seats
+                })
+            })
         this.getProgramOne()
             .then(result => {
-                console.log(result.data[0])
                 let randerArray = []
                 for (var key in result.data[0]){
                     if(key !== 'id' && key !== 'created_at'  && key !== 'updated_at')
                         randerArray.push(result.data[0][key])
                 }
-                let obj = {}
                 let arrayObj = []
-                for (let i = 1; i < randerArray.length; i++){
+                for (let i = 0; i < randerArray.length; i++){
                     if (randerArray.length !==undefined){
-                            obj.id = i;
-                            obj.text = randerArray[i]
+                            arrayObj.push({id: i, text: randerArray[i]})
                     }
                 }
-                console.log(arrayObj)
                 this.setState({
-                    secondParagraph: result.data[0],
+                    secondParagraph: arrayObj
                 })
             })
         this.getProgramTwo()
@@ -131,9 +113,14 @@ class AdminPanel extends Component{
                     if(key !== 'id' && key !== 'created_at'  && key !== 'updated_at')
                         randerArray.push(result.data[0][key])
                 }
+                let arrayObj = []
+                for (let i = 0; i < randerArray.length; i++){
+                    if (randerArray.length !==undefined){
+                        arrayObj.push({id: i, text: randerArray[i]})
+                    }
+                }
                 this.setState({
-                    firstParagraph: randerArray,
-
+                    firstParagraph: arrayObj
                 })
             })
         this.getData()
@@ -265,8 +252,9 @@ class AdminPanel extends Component{
 
         newArr.push({
             id: this.getRandomInt(1, 99999999),
-            newsTitlle: '',
-            newsDeskription: '',
+            text_1: '',
+            text_2: '',
+            images: [{id:1, image: ''},{id:2, image: ''}]
         })
         console.log(newArr)
         this.setState({
@@ -274,7 +262,6 @@ class AdminPanel extends Component{
         })
     }
     ChangeData = () =>{
-        console.log(this.state.data)
         axios({
             method: 'post',
             headers: {'Authorization': `Bearer ${this.props.token}`},
@@ -282,7 +269,6 @@ class AdminPanel extends Component{
             data: this.state.data
         })
             .then(result => {
-                console.log(result);
             })
     }
     onChangeFirstBlock = event => {
@@ -335,13 +321,13 @@ class AdminPanel extends Component{
     }
     onChangeNewsElementTittle = event => {
         var arrId = event.target.id
-        var el = this.state.newsElement.filter(e => {if(e.id === arrId) return e})
+        var el = this.state.newsElement.filter(e => {if(e.id == arrId) return e})
         var obj = el[0]
         console.log(obj)
 
         var newArr = this.state.newsElement.map(e => {
-            if(e.id === arrId) {
-                e.newsTitlle = event.target.value
+            if(e.id == arrId) {
+                e.title = event.target.value
             }
             return e
         })
@@ -349,21 +335,79 @@ class AdminPanel extends Component{
             newsElement: newArr
         })
     }
-    onChangeNewsElementDescript = event => {
+    onChangeFirstNewsElementDescript = event => {
+        console.log(event.target)
         var arrId = event.target.id
-        var el = this.state.newsElement.filter(e => {if(e.id === arrId) return e})
+        var el = this.state.newsElement.filter(e => {if(e.id == arrId) return e})
         var obj = el[0]
         console.log(obj)
 
         var newArr = this.state.newsElement.map(e => {
-            if(e.id === arrId) {
-                e.newsDeskription = event.target.value
+            if(e.id == arrId) {
+                e.text_1 = event.target.value
             }
             return e
         })
         this.setState({
             newsElement: newArr
         })
+
+    }
+    onChangeSecondNewsElementDescript = event => {
+        console.log(event.target)
+        var arrId = event.target.id
+        var el = this.state.newsElement.filter(e => {
+            if (e.id == arrId) return e
+        })
+        var obj = el[0]
+        console.log(obj)
+
+        var newArr = this.state.newsElement.map(e => {
+            if (e.id == arrId) {
+                e.text_2 = event.target.value
+            }
+            return e
+        })
+        this.setState({
+            newsElement: newArr
+        })
+    }
+    onChangeFirstImageNews = element =>{
+        var file = element.target.files[0];
+        var reader = new FileReader();
+        var arrId = element.target.id
+        reader.onloadend = () => {
+            var newArr = this.state.newsElement.map(e => {
+                if(e.id == arrId) {
+                    e.images[0].image = reader.result
+                }
+                return e
+            })
+            this.setState({
+                newsElement: newArr
+            })
+        }
+        reader.readAsDataURL(file);
+    }
+    onChangeSecondImageNews = element =>{
+        var file = element.target.files[0];
+        var reader = new FileReader();
+        var arrId = element.target.id
+        var el = this.state.newsElement.filter(e => {
+            if (e.id == arrId) return e
+        })
+        reader.onloadend = () => {
+            var newArr = this.state.newsElement.map(e => {
+                if(e.id == arrId) {
+                    e.images[1].image = reader.result
+                }
+                return e
+            })
+            this.setState({
+                newsElement: newArr
+            })
+        }
+        reader.readAsDataURL(file);
     }
     render(){
 
@@ -379,28 +423,54 @@ class AdminPanel extends Component{
                                     <Button className='deleteButton' onClick={() => this.onDeleteNews(e.id)}>
                                         X
                                     </Button>
+                                    <p>Title №{e.id}</p>
                                     <TextArea
+                                        className='News-TitletexrArea'
                                         placeholder='Оглавление'
                                         id={e.id}
-                                        value={e.newsTitlle}
+                                        value={e.title}
                                         onChange={this.onChangeNewsElementTittle}
-                                        className='inputBlock'
                                     />
-
+                                    <p> first paragraphs </p>
                                     <TextArea
                                         placeholder='1 абзац'
                                         id={e.id}
-                                        value={e.newsDeskription1}
-                                        onChange={this.onChangeNewsElementTittle}
-                                        className='inputBlock'
+                                        value={e.text_1}
+                                        onChange={this.onChangeFirstNewsElementDescript}
+                                        className='News-DescriptTexrArea'
                                     />
+                                    <p> second paragraphs </p>
                                     <TextArea
                                         placeholder='2 абзац'
                                         id={e.id}
-                                        value={e.newsDeskription2}
-                                        onChange={this.onChangeNewsElementTittle}
-                                        className='inputBlock'
+                                        value={e.text_2}
+                                        onChange={this.onChangeSecondNewsElementDescript}
+                                        className='News-DescriptTexrArea'
                                     />
+                                    <div>
+                                        <div>
+                                            <input
+                                                type="file"
+                                                id={e.id}
+                                                onChange={this.onChangeFirstImageNews}
+                                            />
+                                            <input
+                                                type="file"
+                                                id={e.id}
+                                                onChange={this.onChangeSecondImageNews}
+                                            />
+                                        </div>
+                                        <div className='News-image'>
+                                            <img
+                                                src={e.images[0].image}
+                                                alt="image"
+                                            />
+                                            <img
+                                                src={e.images[1].image}
+                                                alt="image"
+                                            />
+                                        </div>
+                                    </div>
                                 </div>
                             ))
                         }
@@ -465,7 +535,7 @@ class AdminPanel extends Component{
             { menuItem: '2й модуль', render: () =>
                             <Tab.Pane>
                             {
-                                secondParagraph.map((e, item, key) => (
+                                secondParagraph.map((e) => (
                                     <div className='wrapInput'>
                                         <Button className='deleteButton' onClick={() => this.onDeleteSecondModule(e.id)}>
                                             X
@@ -552,6 +622,7 @@ class AdminPanel extends Component{
                         />
                         <p>Текст описания</p>
                         <TextArea
+                            className='Courses-textArea'
                             type='text'
                             laceholder='Описанмие'
                             name="descriptFirstCours"
@@ -590,6 +661,7 @@ class AdminPanel extends Component{
                     />
                     <p>Текст описания</p>
                     <TextArea
+                        className='Courses-textArea'
                         paceholder='Описанмие'
                         name="descriptSecondCours"
                         value={data.descriptSecondCours}
