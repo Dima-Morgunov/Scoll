@@ -65,8 +65,6 @@ class AdminPanel extends Component{
     componentDidMount() {
         this.getNews()
             .then(result => {
-                console.log(result)
-                console.log(result.data[0].images[0].image)
                 this.setState({
                     newsElement: result.data
                 })
@@ -171,7 +169,6 @@ class AdminPanel extends Component{
         var newState = this.state.firstParagraph.filter(e => {
             if(e.id !== id) return e
         })
-        console.log(newState)
         this.setState({
             firstParagraph: newState
         })
@@ -206,16 +203,13 @@ class AdminPanel extends Component{
     getRandomInt = (min, max) => {
         return Math.floor(Math.random() * (max - min + 1)) + min;
     }
-    getRandomInt
 
 //функции добавления инпутов
     onAddFirstModule = () =>{
         var newArr = this.state.firstParagraph
-
         newArr.push({
             id: this.getRandomInt(1, 99999999),
-            name: this.getRandomInt(1, 99999999),
-            value: '',
+            text: '',
         })
         console.log(newArr)
         this.setState({
@@ -226,30 +220,24 @@ class AdminPanel extends Component{
         var newArr = this.state.secondParagraph
         newArr.push({
             id: this.getRandomInt(1, 99999999),
-            name: this.getRandomInt(1, 99999999),
-            value: '',
+            text: '',
         })
-        console.log(newArr)
         this.setState({
             secondParagraph: newArr
         })
     }
     onAddDescript = () =>{
         var newArr = this.state.startCoursesDescript
-
         newArr.push({
             id: this.getRandomInt(1, 99999999),
-            name: this.getRandomInt(1, 99999999),
-            value: '',
+            text: '',
         })
-        console.log(newArr)
         this.setState({
             startCoursesDescript: newArr
         })
     }
     onAddNews = () =>{
         var newArr = this.state.newsElement
-
         newArr.push({
             id: this.getRandomInt(1, 99999999),
             text_1: '',
@@ -261,22 +249,8 @@ class AdminPanel extends Component{
             newsElement: newArr
         })
     }
-    ChangeData = () =>{
-        axios({
-            method: 'post',
-            headers: {'Authorization': `Bearer ${this.props.token}`},
-            url: '/api/auth/user/apartment',
-            data: this.state.data
-        })
-            .then(result => {
-            })
-    }
     onChangeFirstBlock = event => {
         var arrId = event.target.id
-        var el = this.state.firstParagraph.filter(e => {if(e.id === arrId) return e})
-        var obj = el[0]
-        console.log(obj)
-
         var newArr = this.state.firstParagraph.map(e => {
             if(e.id === arrId) {
                 e.text = event.target.value
@@ -289,10 +263,6 @@ class AdminPanel extends Component{
     }
     onChangeSecondBlock = event => {
         var arrId = event.target.id
-        var el = this.state.secondParagraph.filter(e => {if(e.id === arrId) return e})
-        var obj = el[0]
-        console.log(obj)
-
         var newArr = this.state.secondParagraph.map(e => {
             if(e.id === arrId) {
                 e.text = event.target.value
@@ -305,10 +275,6 @@ class AdminPanel extends Component{
     }
     onChangeStartCoursesDescript = event => {
         var arrId = event.target.id
-        var el = this.state.startCoursesDescript.filter(e => {if(e.id === arrId) return e})
-        var obj = el[0]
-        console.log(obj)
-
         var newArr = this.state.startCoursesDescript.map(e => {
             if(e.id === arrId) {
                 e.text = event.target.value
@@ -336,12 +302,7 @@ class AdminPanel extends Component{
         })
     }
     onChangeFirstNewsElementDescript = event => {
-        console.log(event.target)
         var arrId = event.target.id
-        var el = this.state.newsElement.filter(e => {if(e.id == arrId) return e})
-        var obj = el[0]
-        console.log(obj)
-
         var newArr = this.state.newsElement.map(e => {
             if(e.id == arrId) {
                 e.text_1 = event.target.value
@@ -354,14 +315,7 @@ class AdminPanel extends Component{
 
     }
     onChangeSecondNewsElementDescript = event => {
-        console.log(event.target)
         var arrId = event.target.id
-        var el = this.state.newsElement.filter(e => {
-            if (e.id == arrId) return e
-        })
-        var obj = el[0]
-        console.log(obj)
-
         var newArr = this.state.newsElement.map(e => {
             if (e.id == arrId) {
                 e.text_2 = event.target.value
@@ -393,9 +347,6 @@ class AdminPanel extends Component{
         var file = element.target.files[0];
         var reader = new FileReader();
         var arrId = element.target.id
-        var el = this.state.newsElement.filter(e => {
-            if (e.id == arrId) return e
-        })
         reader.onloadend = () => {
             var newArr = this.state.newsElement.map(e => {
                 if(e.id == arrId) {
@@ -461,14 +412,19 @@ class AdminPanel extends Component{
                                             />
                                         </div>
                                         <div className='News-image'>
-                                            <img
-                                                src={e.images[0].image}
-                                                alt="image"
-                                            />
-                                            <img
-                                                src={e.images[1].image}
-                                                alt="image"
-                                            />
+                                            {
+                                                e.images &&
+                                               <div>
+                                                   <img
+                                                       src={e.images[0].image}
+                                                       alt="image"
+                                                   />
+                                                   <img
+                                                       src={e.images[1].image}
+                                                       alt="image"
+                                                   />
+                                               </div>
+                                            }
                                         </div>
                                     </div>
                                 </div>
