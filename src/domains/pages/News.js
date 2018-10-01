@@ -66,7 +66,7 @@ class News extends Component{
     componentDidMount() {
         this.getNews()
             .then(result => {
-                console.log(this.state.newsElement)
+                console.log(result)
                 this.setState({
 
                 })

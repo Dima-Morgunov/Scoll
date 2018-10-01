@@ -13,8 +13,7 @@ class StartCourses extends Component{
         return axios.get(`/clients`)
     }
     componentDidMount() {
-
-        this.getStartCoursesData()
+       /* this.getStartCoursesData()
             .then(result => {
                 let responsData = []
                 for (var key in result.data[0]){
@@ -25,7 +24,7 @@ class StartCourses extends Component{
                     startCoursesDescript: responsData,
                     freePlacesCount: result.data[0].seats
                 })
-            })
+            })*/
     }
 
     render(){

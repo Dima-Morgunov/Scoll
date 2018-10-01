@@ -10,9 +10,8 @@ import LoginAdminPage from "./LoginAdminPage";
      };
 
      onSubmit = (data) => {
-         console.log(data)
          axios.post(`/api/auth/login`, data)
-             .then(result => localStorage.setItem(`token`, result.data.token))
+             .then(result => localStorage.setItem("token", result.data.access_token))
              .then(() => this.setState({isLogin : true}))
      }
 

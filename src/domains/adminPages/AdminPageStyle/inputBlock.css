@@ -1,5 +1,6 @@
 .wrapInput{
     position: relative;
+    border: 1px solid gray;
 }
 .inputBlock{
     width: 90% ;
@@ -10,4 +11,14 @@
     position: absolute;
     right: 0;
     top: 11px;
+}
+.changeButton{
+    z-index: 100;
+    position: absolute;
+    right: 75px;
+    top: 11px;
+}
+.StartCoursesInputBlock{
+    width: 90% ;
+    margin: 60px 0 10px 0;
 }
