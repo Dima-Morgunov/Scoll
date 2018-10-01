@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f98869e-3a95-4365-8337-63efddcc15d9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project" beforeDir="false" afterPath="$PROJECT_DIR$/project" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/app/Http/Controllers/CompanyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/app/Http/Controllers/CompanyController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domains/adminPages/AdminPageStyle/inputBlock.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/adminPages/AdminPageStyle/inputBlock.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domains/adminPages/AdminPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/adminPages/AdminPanel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domains/adminPages/TestAdmin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/adminPages/TestAdmin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domains/pages/Courses.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/pages/Courses.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domains/pages/News.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/pages/News.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domains/pages/StartCourses.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/pages/StartCourses.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -123,7 +116,7 @@
     <session id="-991325195">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="22" />
+          <entry key="project.closed" value="23" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="4" />
           <entry key="project.open.time.10" value="2" />
@@ -140,7 +133,7 @@
         <counts>
           <entry key="css" value="487" />
           <entry key="html" value="2" />
-          <entry key="js" value="12009" />
+          <entry key="js" value="12011" />
           <entry key="json" value="7" />
           <entry key="php" value="28" />
           <entry key="txt" value="36" />
@@ -151,7 +144,7 @@
           <entry key="CSS" value="487" />
           <entry key="HTML" value="2" />
           <entry key="JSON" value="7" />
-          <entry key="JavaScript" value="12009" />
+          <entry key="JavaScript" value="12011" />
           <entry key="PLAIN_TEXT" value="64" />
         </counts>
       </usages-collector>
@@ -199,8 +192,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/domains/adminPages/AdminPanel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
-              <caret line="689" column="29" lean-forward="true" selection-start-line="689" selection-start-column="29" selection-end-line="689" selection-end-column="29" />
+            <state relative-caret-position="308">
+              <caret line="683" column="78" selection-start-line="683" selection-start-column="59" selection-end-line="683" selection-end-column="78" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
                 <element signature="e#1850#1961#0" />
@@ -514,12 +507,12 @@
       <workItem from="1538063602031" duration="3527000" />
       <workItem from="1538136576466" duration="1847000" />
       <workItem from="1538313725630" duration="599000" />
-      <workItem from="1538373597126" duration="32167000" />
+      <workItem from="1538373597126" duration="32331000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="310454000" />
+    <option name="totallyTimeSpent" value="310618000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -818,8 +811,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/domains/adminPages/AdminPanel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="689" column="29" lean-forward="true" selection-start-line="689" selection-start-column="29" selection-end-line="689" selection-end-column="29" />
+        <state relative-caret-position="308">
+          <caret line="683" column="78" selection-start-line="683" selection-start-column="59" selection-end-line="683" selection-end-column="78" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
             <element signature="e#1850#1961#0" />
