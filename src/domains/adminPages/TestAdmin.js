@@ -14,14 +14,22 @@ import LoginAdminPage from "./LoginAdminPage";
              .then(result => localStorage.setItem("token", result.data.access_token))
              .then(() => this.setState({isLogin : true}))
      }
-
+     removeUser = () =>{
+         localStorage.clear();
+         this.setState({
+             isLogin: false
+         })
+     }
      render(){
          const { isLogin } = this.state;
 
          return(
              <div>
-                 {localStorage.getItem(`token`) ?
-                     <AdminPanel />
+                 {isLogin?
+                     <div>
+                        <button className="exit-style" onClick={this.removeUser}>Выход</button>
+                        <AdminPanel />
+                     </div>
                      :
                      <LoginAdminPage submit={this.onSubmit}/>}
              </div>

@@ -7,7 +7,7 @@ class  FormPage extends Component{
         data:{
             name:'',
             email:'',
-            number:'',
+            text:'',
         }
     }
 
@@ -16,9 +16,10 @@ class  FormPage extends Component{
             data: { ...this.state.data, [e.target.name]: e.target.value }
         })};
 
-    onSubmit(data){
-        axios.post(`url`, this.state.data)
-            .then(result => console.log('123'))
+    onSubmit= () =>{
+        console.log(this.state.data)
+        axios.post(`/email`, this.state.data)
+            .then(result => console.log(result))
         }
 
     render(){
@@ -50,8 +51,8 @@ class  FormPage extends Component{
                     <input
                         type="tel"
                         placeholder="Телефон"
-                        name='number'
-                        value={data.number}
+                        name='text'
+                        value={data.text}
                         onChange={this.onChange}
                     />
                 </div>

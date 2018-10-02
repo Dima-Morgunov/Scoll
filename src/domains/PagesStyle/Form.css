@@ -46,7 +46,7 @@
     border-left: 0;
     border-right: 0;
     border-color: #212121;
-    cursor: pointer;
+
     color: #212121;
     font-family: Raleway Light;
     font-size: 30px;
@@ -71,7 +71,7 @@
     font-size: 20px;
     text-transform: uppercase;
     letter-spacing: 1px;
-
+    cursor: pointer;
     border: none;
 }
 @media only screen and (max-width: 1220px){

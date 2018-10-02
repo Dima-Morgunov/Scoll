@@ -49,6 +49,12 @@
     position: relative;
     display: inline-block;
 }
+.Footer-conteiner-item-contacts ul li a{
+    color: white;
+}
+.Footer-conteiner-item-contacts ul li a:hover{
+    color: gray;
+}
 .Footer-conteiner-item-contacts ul li span{
     margin-bottom: -7px;
     text-transform: none;
@@ -62,7 +68,6 @@
     margin-right: 3px;
     background: url('../../image/FooterTelephonIcon.png');
 }
-
 .Footer-conteiner-item-contacts-img2{
     width: 30px;
     height: 23px;

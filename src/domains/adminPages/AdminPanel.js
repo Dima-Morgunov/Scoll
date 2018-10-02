@@ -3,7 +3,6 @@ import { Tab, Input, TextArea, Button } from 'semantic-ui-react'
 import axios from  "axios"
 import './AdminPageStyle/inputBlock.css'
 import './AdminPageStyle/AdminPanel.css'
-import Commidoncours from '../pages/Commidoncours'
 
 class AdminPanel extends Component{
 
@@ -18,7 +17,7 @@ class AdminPanel extends Component{
         },
         // 4й блок
 
-        startCoursesDescript: null,
+        startCoursesDescript: [],
         startCoursesAddText: '',
         // 3й блок
         secondParagraph:null,
@@ -47,6 +46,8 @@ class AdminPanel extends Component{
             freePlacesCount:"",
         },
     };
+
+
     // Гет запрос на 1й блок
     getFrontEndData = () =>{
         return axios.get(`/front-end`)
@@ -87,6 +88,7 @@ class AdminPanel extends Component{
             })
         this.getStartCoursesData()
             .then(result => {
+                console.log(result.data)
                 this.setState({
                     startCoursesDescript: result.data[1],
                     freePlacesCount: result.data[0]
@@ -129,6 +131,7 @@ class AdminPanel extends Component{
             })
         this.getFrontEndData()
             .then(result => {
+                console.log(result)
                 this.setState({
                     data: {
                         ...this.state.data,
@@ -142,18 +145,66 @@ class AdminPanel extends Component{
     }
 //функция изменения инпутов
     onChange = e => {
-        console.log(this.state.data)
         this.setState({
             data: { ...this.state.data, [e.target.name]: e.target.value }
         });
     }
-//функции удаление инпутов
+    //1й блок
+    ChangeDataFirstCourses = () =>{
+        let textFirstCourses = {
+            data: this.state.data.startFistCours,
+            complication: this.state.data.levelFirstCours,
+            title: this.state.data.descriptFirstTittleCours,
+            text: this.state.data.descriptFirstCours,
+            id: "1"
 
-    getRandomInt = (min, max) => {
-        return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+        axios.request({
+            url: '/api/auth/course_php/1',
+            method: 'put',
+            headers: {
+                Authorization: "Bearer " + localStorage.getItem("token")
+            },
+            data: textFirstCourses
+        })
     }
+    ChangeDataSecondCourses = () =>{
+        let textSecondCourses = {
+            data: this.state.data.startSecondCours,
+            complication: this.state.data.levelSecondCours,
+            title: this.state.data.descriptSecondTittleCours,
+            text: this.state.data.descriptSecondCours,
+            id: "1"
 
-
+        }
+        axios.request({
+            url: '/api/auth/course_front/1',
+            method: 'put',
+            headers: {
+                Authorization: "Bearer " + localStorage.getItem("token")
+            },
+            data: textSecondCourses
+        })
+    }
+    // 2й блок
+    ChangeBeginningCourse = () =>{
+        let text = {
+            col: this.state.data.drationCourses,
+            days: this.state.data.numberOfTimes,
+            month: this.state.data.monthBeginningCourses,
+            time: this.state.data.lessonDuration,
+            id: "1"
+        }
+        axios.request({
+            url: '/api/auth/data/1',
+            method: 'put',
+            headers: {
+                Authorization: "Bearer " + localStorage.getItem("token")
+            },
+            data: text
+        })
+    }
+//функции удаление инпутов
     //3й блок
     onChangeAddProgramOne = e =>{
         this.setState({
@@ -305,6 +356,24 @@ class AdminPanel extends Component{
             startCoursesAddText: e.target.value
         })
     }
+    onDeleteDescript = id => {
+        axios.request({
+            url: '/api/auth/clients/' + id,
+            method: 'delete',
+            headers: {
+                Authorization: "Bearer " + localStorage.getItem("token")
+            },
+        }).then(() => {
+            this.getStartCoursesData()
+                .then(result => {
+                    console.log(result)
+                    this.setState({
+                        startCoursesDescript: result.data[1],
+                    })
+                })
+        }).catch((error) => {
+            console.log(error)})
+    }
     changeItem = e =>{
         console.log(e);
         axios.request({
@@ -324,28 +393,8 @@ class AdminPanel extends Component{
         }).catch((error) => {
             console.log(error)})
     }
-    onDeleteDescript = id => {
-        axios.request({
-            url: '/api/auth/clients/' + id,
-            method: 'delete',
-            headers: {
-                Authorization: "Bearer " + localStorage.getItem("token")
-            },
-        }).then(() => {
-            this.getStartCoursesData()
-                .then(result => {
-                    console.log(result)
-                    this.setState({
-                        startCoursesDescript: result.data[1],
-                    })
-                })
-        }).catch((error) => {
-            console.log(error)})
-    }
     addStartCoursItem = () =>{
-        let key = "startCoursesAddText"
-        let text = {text: this.state.startCoursesAddText[key]}
-        console.log(text)
+        let text = {text: this.state.startCoursesAddText}
         axios.request({
             url: '/api/auth/clients',
             method: 'post',
@@ -376,6 +425,24 @@ class AdminPanel extends Component{
         this.setState({
             startCoursesDescript: newArr
         })
+    }
+    cahngeFreePlaces = () =>{
+        axios.request({
+            url: '/api/auth/seats/1',
+            method: 'put',
+            headers: {
+                Authorization: "Bearer " + localStorage.getItem("token")
+            },
+            data: {text: this.state.data.freePlacesCount + " мест"}
+        }).then(() => {
+            this.getStartCoursesData()
+                .then(result => {
+                    this.setState({
+                        startCoursesDescript: result.data[1]
+                    })
+                })
+        }).catch((error) => {
+            console.log(error)})
     }
 
     //5й блок
@@ -623,6 +690,8 @@ class AdminPanel extends Component{
                                 </div>
                             ))
                         }
+
+
                         <Input
                             placeholder='Начало курса'
                             name= "startCoursesAddText"
@@ -630,16 +699,14 @@ class AdminPanel extends Component{
                             className='inputBlock'
                         />
                         <Button onClick={this.addStartCoursItem}>Update</Button>
-                    </Tab.Pane> },
-            { menuItem: 'Количество свободных мест', render: () =>
-                    <Tab.Pane>
+                        <p>Количество свободных мест</p>
                         <Input
                             placeholder='11'
                             name="freePlacesCount"
                             value={data.freePlacesCount}
                             onChange={this.onChange}
                         />
-                        <Button >Click Here</Button>
+                        <Button onClick={this.cahngeFreePlaces}>Update</Button>
                     </Tab.Pane> },
         ]
         //3й блок
@@ -705,40 +772,39 @@ class AdminPanel extends Component{
                         <p>Продолжительность</p>
                         <Input
                             placeholder='6 месяцев'
-                            name="startFistCours"
+                            name="drationCourses"
                             value={data.drationCourses}
                             onChange={this.onChange}
                         />
                         <p>Начало занятий</p>
                         <Input
                             placeholder='ноябрь'
-                            name="startFistCours"
+                            name="monthBeginningCourses"
                             value={data.monthBeginningCourses}
                             onChange={this.onChange}
                         />
                         <p>Количество занятий</p>
                         <Input
                             placeholder='3 раза в неделю'
-                            name="levelFirstCours"
+                            name="numberOfTimes"
                             value={data.numberOfTimes}
                             onChange={this.onChange}
                         />
                         <p>Время</p>
                         <Input
                             placeholder='18:30 - 21:30'
-                            name="levelFirstCours"
+                            name="lessonDuration"
                             value={data.lessonDuration}
                             onChange={this.onChange}
                         />
                         <p>Применить изменения</p>
-                        <Button onClick={this.ChangeData}>Update</Button>
+                        <Button onClick={this.ChangeBeginningCourse}>Update</Button>
                     </Tab.Pane> },
         ]
         // 1й блок
         const Courses_menu = [
             { menuItem: 'Курс №1', render: () =>
                     <Tab.Pane>
-                        <Commidoncours />
                         <p>Начало курса</p>
                         <Input
                             placeholder='Начало курса'
@@ -774,7 +840,7 @@ class AdminPanel extends Component{
                             onChange={this.onChange}
                         />
                         <p>Применить изменения</p>
-                        <Button onClick={this.ChangeData}>Update</Button>
+                        <Button onClick={this.ChangeDataFirstCourses}>Update</Button>
 
                     </Tab.Pane> },
             { menuItem: 'Курсы №2', render: () => <Tab.Pane>
@@ -811,7 +877,7 @@ class AdminPanel extends Component{
                         onChange={this.onChange}
                     />
                     <p>Применить изменения</p>
-                    <Button onClick={this.ChangeData}>Update</Button>
+                    <Button onClick={this.ChangeDataSecondCourses}>Update</Button>
                 </Tab.Pane> },
         ]
         const panes = [
@@ -837,9 +903,10 @@ class AdminPanel extends Component{
         ]
         return(
             <div>
-                {
-                    <Tab menu={{ fluid: true, vertical: true, tabular: true }} panes={panes} />
-                }
+                    <div>
+
+                        <Tab menu={{ fluid: true, vertical: true, tabular: true }} panes={panes} />
+                    </div>
             </div>
         )
     }

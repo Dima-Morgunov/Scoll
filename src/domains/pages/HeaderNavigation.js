@@ -8,19 +8,15 @@ class HeaderNavigation extends Component{
     state ={
         showModal: false
     }
-    toggle =() => {
+    toggle = () =>{
         this.setState({
-            showModal: true
-        });
-        this.setState({ showModal: true }, () => {
-            document.addEventListener('click', this.closeMenu);
-            });
-        }
-    closeMenu = () => {
-        this.setState({ showModal: false }, () => {
-            document.removeEventListener('click', this.closeMenu);
-        });
-        document.addEventListener("touchstart", function(){}, true);
+        showModal: !this.state.showModal
+    })
+    }
+
+    func = (str) => {
+        this.toggle()
+        this.props.scrollTo(str)
     }
 
     render(){
@@ -44,18 +40,18 @@ class HeaderNavigation extends Component{
                         {this.state.showModal ?
                             (
                                 <ul className="openToggleMenu">
-                                <li onClick={() => scrollTo(`contacts`)} className='openToggleMenu-item'><span>Контакт</span>ы</li>
-                                <li onClick={() => scrollTo(`news`)} className='openToggleMenu-item'><span>Новост</span>и</li>
-                                <li onClick={() => scrollTo(`course`)} className='openToggleMenu-item'><span>Курс</span>ы</li>
-                                <li onClick={() => scrollTo(`about`)} className='openToggleMenu-item'><span>О на</span>с</li>
+                                    <li onClick={this.toggle} className='openToggleMenu-closeButton'>x</li>
+                                <li className='openToggleMenu-item'><span onClick={() => this.func(`contacts`)}>Контакт</span>ы</li>
+                                <li className='openToggleMenu-item'><span onClick={() => this.func(`news`)}>Новост</span>и</li>
+                                <li className='openToggleMenu-item'><span onClick={() => this.func(`course`)}>Курс</span>ы</li>
+                                <li className='openToggleMenu-item'><span onClick={() => this.func(`about`)}>О на</span>с</li>
                             </ul>
                             ) : (null)}
                         <ul>
-                            <li onClick={() => scrollTo(`about`)} ><span>О на</span>с</li>
-                            <li onClick={() => scrollTo(`course`)}><span>Курс</span>ы</li>
-                            <li onClick={() => scrollTo(`news`)}><span>Новост</span>и</li>
-                            <li onClick={() => scrollTo(`contacts`)}><span>Контакт</span>ы</li>
-                            <li><img src={scalelogo} alt='£'/></li>
+                            <li ><span onClick={() => scrollTo(`about`)}>О на</span>с</li>
+                            <li ><span onClick={() => scrollTo(`course`)}>Курс</span>ы</li>
+                            <li ><span onClick={() => scrollTo(`news`)}>Новост</span>и</li>
+                            <li ><span onClick={() => scrollTo(`contacts`)}>Контакт</span>ы</li>
                         </ul>
                     </div>
                 </div>

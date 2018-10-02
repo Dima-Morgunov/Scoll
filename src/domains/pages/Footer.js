@@ -27,19 +27,18 @@ class Footer extends Component{
                     </div>
                     <div className="Footer-conteiner-item-contacts">
                         <ul>
-                            <li><span className='Footer-conteiner-item-contacts-img1'></span> <span>+380(93)-708-8232</span></li>
-                            <li><span className='Footer-conteiner-item-contacts-img2'></span> <span>itant.house@gmail.com</span></li>
-                            <li><span className='Footer-conteiner-item-contacts-img3'></span> <span>itant.house</span></li>
-                            <li><span className='Footer-conteiner-item-contacts-img4'></span> <span>Ukraine, Kharkiv</span></li>
+                            <li><span className='Footer-conteiner-item-contacts-img1'></span><a href="+380(93)-708-8232"><span>+380(93)-708-8232</span></a></li>
+                            <li><span className='Footer-conteiner-item-contacts-img2'></span><a href="mailto:"><span>itant.house@gmail.com</span></a></li>
+                            <li><span className='Footer-conteiner-item-contacts-img3'></span><a href="skype:itan.house"><span>itant.house</span></a></li>
+                            <li><span className='Footer-conteiner-item-contacts-img4'></span><a href="https://goo.gl/maps/MDmRWBU56hN2" target="_blank" ><span>Ukraine, Kharkiv</span></a></li>
                         </ul>
                     </div>
-
                 </div>
                 <div className="Footer-conteiner-social">
                     <ul>
-                        <li><img src={facebook} alt='£'/></li>
-                        <li><img src={linkedin} alt='£'/></li>
-                        <li><img src={upwork} alt='£'/></li>
+                        <li><a href="https://www.facebook.com/itant.house" target="_blank"><img src={facebook} alt='£'/></a></li>
+                        <li><a href="https://www.linkedin.com/in/sergei-g/" target="_blank"><img src={linkedin} alt='£'/></a></li>
+                        <li><a href="https://www.upwork.com/o/companies/~01c70cdbbf75ef9f0f/" target="_blank"><img src={upwork} alt='£'/></a></li>
                     </ul>
                     <span>2018 ANTHOUSE, Inc. All Rights Reserved</span>
                 </div>

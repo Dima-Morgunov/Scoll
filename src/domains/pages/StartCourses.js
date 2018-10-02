@@ -13,18 +13,13 @@ class StartCourses extends Component{
         return axios.get(`/clients`)
     }
     componentDidMount() {
-       /* this.getStartCoursesData()
+        this.getStartCoursesData()
             .then(result => {
-                let responsData = []
-                for (var key in result.data[0]){
-                    if(key !== 'id' && key !== 'created_at'  && key !== 'updated_at' && key !== 'seats')
-                        responsData.push(result.data[0][key])
-                }
                 this.setState({
-                    startCoursesDescript: responsData,
-                    freePlacesCount: result.data[0].seats
+                    startCoursesDescript: result.data[1],
+                    freePlacesCount: result.data[0][0].text
                 })
-            })*/
+            })
     }
 
     render(){
@@ -44,7 +39,7 @@ class StartCourses extends Component{
                             {startCoursesDescript
                                 ?
                                 startCoursesDescript.map(e =>
-                                    <li>{e}</li>
+                                    <li>{e.text}</li>
                                 ):null
                             }
                         </ul>
