@@ -10,9 +10,13 @@ import Footer from './pages/Footer'
 import Commidoncours from './pages/Commidoncours'
 import FormPage from './pages/Form'
 
+
 import scrollToComponent from 'react-scroll-to-component';
 
 class MainPage extends Component{
+    state = {
+        isLoading: true
+    }
 
     scrollFunc = (type) => {
         switch(type) {
@@ -51,6 +55,7 @@ class MainPage extends Component{
                 <FormPage ref={(section) => { this.FormPage = section; }}/>
                 <News ref={(section) => { this.News = section; }}/>
                 <Footer scrollTo ={this.scrollFunc} ref={(section) => { this.Contacts = section; }}/>
+
             </div>
         )
 }}

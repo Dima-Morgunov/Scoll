@@ -2,20 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f98869e-3a95-4365-8337-63efddcc15d9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/domains/Preloder.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project" beforeDir="false" afterPath="$PROJECT_DIR$/project" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/app/Http/Controllers/CompanyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/app/Http/Controllers/CompanyController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domains/PagesStyle/Footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/PagesStyle/Footer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/MainPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/MainPage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/domains/PagesStyle/Form.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/PagesStyle/Form.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/domains/PagesStyle/PagesStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/PagesStyle/PagesStyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domains/adminPages/AdminPageStyle/inputBlock.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/adminPages/AdminPageStyle/inputBlock.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domains/adminPages/AdminPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/adminPages/AdminPanel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domains/adminPages/TestAdmin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/adminPages/TestAdmin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domains/pages/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/pages/Footer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/domains/pages/Form.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/pages/Form.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domains/pages/HeaderNavigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/pages/HeaderNavigation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domains/pages/News.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/pages/News.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domains/pages/StartCourses.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/pages/StartCourses.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -128,24 +124,24 @@
     <session id="-991325195">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="24" />
+          <entry key="project.closed" value="25" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="4" />
-          <entry key="project.open.time.10" value="3" />
+          <entry key="project.open.time.10" value="4" />
           <entry key="project.open.time.2" value="4" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.7" value="7" />
           <entry key="project.open.time.8" value="2" />
           <entry key="project.open.time.9" value="9" />
-          <entry key="project.opened" value="32" />
+          <entry key="project.opened" value="33" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="717" />
+          <entry key="css" value="807" />
           <entry key="html" value="2" />
-          <entry key="js" value="13489" />
+          <entry key="js" value="14895" />
           <entry key="json" value="7" />
           <entry key="php" value="28" />
           <entry key="txt" value="36" />
@@ -153,10 +149,10 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="717" />
+          <entry key="CSS" value="807" />
           <entry key="HTML" value="2" />
           <entry key="JSON" value="7" />
-          <entry key="JavaScript" value="13489" />
+          <entry key="JavaScript" value="14895" />
           <entry key="PLAIN_TEXT" value="64" />
         </counts>
       </usages-collector>
@@ -167,12 +163,12 @@
           <entry key="contacts" value="3" />
           <entry key="course_fronts" value="3" />
           <entry key="course_phps" value="3" />
-          <entry key="css" value="33" />
+          <entry key="css" value="35" />
           <entry key="data" value="3" />
           <entry key="html" value="1" />
           <entry key="ico" value="1" />
           <entry key="image_news" value="4" />
-          <entry key="js" value="110" />
+          <entry key="js" value="111" />
           <entry key="json" value="5" />
           <entry key="migrations" value="2" />
           <entry key="news" value="5" />
@@ -186,12 +182,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="33" />
+          <entry key="CSS" value="35" />
           <entry key="Database Element" value="40" />
           <entry key="HTML" value="1" />
           <entry key="Image" value="1" />
           <entry key="JSON" value="5" />
-          <entry key="JavaScript" value="110" />
+          <entry key="JavaScript" value="111" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="RNG Compact" value="1" />
           <entry key="Scratch" value="7" />
@@ -202,77 +198,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/domains/adminPages/AdminPanel.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="906" selection-start-line="906" selection-end-line="906" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-                <element signature="n#!!block;n#componentDidMount#0;n#AdminPanel#0" />
-                <element signature="e#4294#4448#0" />
-                <element signature="e#4496#4512#0" />
-                <element signature="e#5073#5619#0" />
-                <element signature="e#4482#4737#0" />
-                <element signature="e#4632#4728#0" />
-                <element signature="e#4761#4857#0" />
-                <element signature="e#4893#5186#0" />
-                <element signature="e#5222#5517#0" />
-                <element signature="e#5546#6084#0" />
-                <element signature="e#5570#5803#0" />
-                <element signature="e#6113#6652#0" />
-                <element signature="e#6680#7316#0" />
-                <element signature="e#7344#7929#0" />
-                <element signature="e#7963#8467#0" />
-                <element signature="e#8501#9006#0" />
-                <element signature="e#9055#9145#0" />
-                <element signature="e#9769#10325#0" />
-                <element signature="e#9167#9739#0" />
-                <element signature="e#10355#11050#0" />
-                <element signature="e#11095#11515#0" />
-                <element signature="e#13135#13696#0" />
-                <element signature="e#11574#11866#0" />
-                <element signature="e#11917#12210#0" />
-                <element signature="e#12262#12555#0" />
-                <element signature="e#12583#12704#0" />
-                <element signature="e#12744#13120#0" />
-                <element signature="e#13161#13529#0" />
-                <element signature="e#13556#14081#0" />
-                <element signature="e#14112#14803#0" />
-                <element signature="e#14829#15317#0" />
-                <element signature="e#15548#20488#0" />
-                <element signature="e#22455#25537#0" />
-                <element signature="e#23948#25526#0" />
-                <element signature="e#25587#27111#0" />
-                <element signature="e#27160#30591#0" />
-                <element signature="e#30614#31461#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/domains/adminPages/TestAdmin.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
-              <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/domains/adminPages/LoginAdminPage.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/domains/adminPages/AdminPageStyle/inputBlock.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="403">
-              <caret line="24" column="12" lean-forward="true" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
+            <state relative-caret-position="672">
+              <caret line="24" column="12" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -280,30 +209,59 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/domains/pages/HeaderNavigation.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="471">
-              <caret line="43" column="54" lean-forward="true" selection-start-line="43" selection-start-column="54" selection-end-line="43" selection-end-column="54" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/domains/PagesStyle/PagesStyle.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="42" selection-start-line="42" selection-end-line="42" />
+            <state relative-caret-position="81">
+              <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/domains/PagesStyle/PagesStyle.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="38" column="29" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/domains/pages/Form.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+            <state relative-caret-position="252">
+              <caret line="39" column="55" selection-start-line="39" selection-start-column="55" selection-end-line="39" selection-end-column="55" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
-                <element signature="e#267#378#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/domains/PagesStyle/Form.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="67">
+              <caret line="74" column="32" selection-start-line="74" selection-start-column="32" selection-end-line="74" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/domains/MainPage.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="291">
+              <caret line="54" column="16" selection-start-line="54" selection-start-column="16" selection-end-line="54" selection-end-column="16" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/domains/Preloder.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="84">
+              <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -311,7 +269,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/domains/pages/Footer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
+            <state relative-caret-position="616">
               <caret line="29" column="78" selection-start-line="29" selection-start-column="49" selection-end-line="29" selection-end-column="84" />
             </state>
           </provider>
@@ -320,7 +278,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/domains/PagesStyle/Footer.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
+            <state relative-caret-position="1540">
               <caret line="55" column="16" selection-start-line="55" selection-start-column="16" selection-end-line="55" selection-end-column="16" />
             </state>
           </provider>
@@ -329,8 +287,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/domains/pages/News.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="431">
-              <caret line="56" column="49" lean-forward="true" selection-start-line="56" selection-start-column="49" selection-end-line="56" selection-end-column="49" />
+            <state relative-caret-position="1428">
+              <caret line="56" column="49" selection-start-line="56" selection-start-column="49" selection-end-line="56" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -392,22 +350,23 @@
         <option value="$PROJECT_DIR$/src/domains/pages/ProgramCours.js" />
         <option value="$PROJECT_DIR$/src/domains/pages/Commidoncours.js" />
         <option value="$PROJECT_DIR$/src/domains/pages/Header.js" />
-        <option value="$PROJECT_DIR$/src/domains/MainPage.js" />
         <option value="$PROJECT_DIR$/src/domains/adminPages/AdminPageStyle/AdminPanel.css" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/domains/pages/Courses.js" />
         <option value="$PROJECT_DIR$/project/app/Http/Controllers/CompanyController.php" />
         <option value="$PROJECT_DIR$/src/domains/pages/StartCourses.js" />
-        <option value="$PROJECT_DIR$/src/domains/PagesStyle/Form.css" />
         <option value="$PROJECT_DIR$/src/domains/adminPages/AdminPageStyle/inputBlock.css" />
         <option value="$PROJECT_DIR$/src/domains/adminPages/AdminPanel.js" />
         <option value="$PROJECT_DIR$/src/domains/adminPages/TestAdmin.js" />
         <option value="$PROJECT_DIR$/src/domains/pages/Footer.js" />
         <option value="$PROJECT_DIR$/src/domains/pages/News.js" />
         <option value="$PROJECT_DIR$/src/domains/pages/HeaderNavigation.js" />
-        <option value="$PROJECT_DIR$/src/domains/PagesStyle/PagesStyle.css" />
         <option value="$PROJECT_DIR$/src/domains/PagesStyle/Footer.css" />
+        <option value="$PROJECT_DIR$/src/domains/Preloder.css" />
+        <option value="$PROJECT_DIR$/src/domains/MainPage.js" />
         <option value="$PROJECT_DIR$/src/domains/pages/Form.js" />
+        <option value="$PROJECT_DIR$/src/domains/PagesStyle/Form.css" />
+        <option value="$PROJECT_DIR$/src/domains/PagesStyle/PagesStyle.css" />
       </list>
     </option>
   </component>
@@ -460,7 +419,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -486,17 +444,11 @@
               <item name="domains" type="462c0819:PsiDirectoryNode" />
               <item name="adminPages" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="antschool" type="b2602c69:ProjectViewProjectNode" />
-              <item name="antschool" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="domains" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -601,12 +553,13 @@
       <workItem from="1538313725630" duration="599000" />
       <workItem from="1538373597126" duration="32331000" />
       <workItem from="1538410843197" duration="182000" />
-      <workItem from="1538460822400" duration="17092000" />
+      <workItem from="1538460822400" duration="17738000" />
+      <workItem from="1538545731132" duration="10979000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="327892000" />
+    <option name="totallyTimeSpent" value="339517000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -619,8 +572,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="51" y="25" width="1869" height="1055" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24574877" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2484915" />
       <window_info id="Structure" order="1" weight="0.2495886" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -633,8 +587,8 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32922733" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.6692265" visible="true" weight="0.18634886" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.33077344" side_tool="true" weight="0.18634886" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.668678" visible="true" weight="0.18634886" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.33132198" side_tool="true" visible="true" weight="0.18634886" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="TypeScript" order="11" />
       <window_info anchor="bottom" id="Database Console" order="12" weight="0.32936078" />
@@ -684,16 +638,12 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/domains/adminPages/AdminPanel.js</url>
           <line>804</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/c78edc31-7e5f-4f16-a7d7-8e4cf9828d94/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="das://c78edc31-7e5f-4f16-a7d7-8e4cf9828d94/schema/projects/table/clients" />
     <entry file="das://c78edc31-7e5f-4f16-a7d7-8e4cf9828d94/schema/projects/table/contacts" />
     <entry file="das://c78edc31-7e5f-4f16-a7d7-8e4cf9828d94/schema/projects/table/course_fronts" />
@@ -760,13 +710,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/domains/MainPage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="9" selection-start-line="9" selection-end-line="9" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="868">
@@ -822,13 +765,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/domains/PagesStyle/Form.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="73" column="20" selection-start-line="73" selection-start-column="20" selection-end-line="73" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/domains/pages/StartCourses.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="448">
@@ -850,63 +786,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/domains/adminPages/AdminPageStyle/inputBlock.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="24" column="12" lean-forward="true" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/domains/adminPages/LoginAdminPage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/domains/adminPages/AdminPanel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
+        <state relative-caret-position="23604">
           <caret line="906" selection-start-line="906" selection-end-line="906" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
             <element signature="n#!!block;n#componentDidMount#0;n#AdminPanel#0" />
-            <element signature="e#4294#4448#0" />
-            <element signature="e#4496#4512#0" />
-            <element signature="e#5073#5619#0" />
-            <element signature="e#4482#4737#0" />
-            <element signature="e#4632#4728#0" />
-            <element signature="e#4761#4857#0" />
-            <element signature="e#4893#5186#0" />
-            <element signature="e#5222#5517#0" />
-            <element signature="e#5546#6084#0" />
-            <element signature="e#5570#5803#0" />
-            <element signature="e#6113#6652#0" />
-            <element signature="e#6680#7316#0" />
-            <element signature="e#7344#7929#0" />
-            <element signature="e#7963#8467#0" />
-            <element signature="e#8501#9006#0" />
-            <element signature="e#9055#9145#0" />
-            <element signature="e#9769#10325#0" />
-            <element signature="e#9167#9739#0" />
-            <element signature="e#10355#11050#0" />
-            <element signature="e#11095#11515#0" />
-            <element signature="e#13135#13696#0" />
-            <element signature="e#11574#11866#0" />
-            <element signature="e#11917#12210#0" />
-            <element signature="e#12262#12555#0" />
-            <element signature="e#12583#12704#0" />
-            <element signature="e#12744#13120#0" />
-            <element signature="e#13161#13529#0" />
-            <element signature="e#13556#14081#0" />
-            <element signature="e#14112#14803#0" />
-            <element signature="e#14829#15317#0" />
-            <element signature="e#15548#20488#0" />
-            <element signature="e#22455#25537#0" />
-            <element signature="e#23948#25526#0" />
-            <element signature="e#25587#27111#0" />
-            <element signature="e#27160#30591#0" />
-            <element signature="e#30614#31461#0" />
           </folding>
         </state>
       </provider>
@@ -918,49 +804,86 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/domains/pages/HeaderNavigation.js">
+    <entry file="file://$PROJECT_DIR$/src/domains/adminPages/LoginAdminPage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="471">
-          <caret line="43" column="54" lean-forward="true" selection-start-line="43" selection-start-column="54" selection-end-line="43" selection-end-column="54" />
+        <state relative-caret-position="84">
+          <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/domains/PagesStyle/PagesStyle.css">
+    <entry file="file://$PROJECT_DIR$/src/domains/adminPages/AdminPageStyle/inputBlock.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="42" selection-start-line="42" selection-end-line="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/domains/pages/News.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
-          <caret line="56" column="49" lean-forward="true" selection-start-line="56" selection-start-column="49" selection-end-line="56" selection-end-column="49" />
+        <state relative-caret-position="672">
+          <caret line="24" column="12" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/domains/pages/Footer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
+        <state relative-caret-position="616">
           <caret line="29" column="78" selection-start-line="29" selection-start-column="49" selection-end-line="29" selection-end-column="84" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/domains/PagesStyle/Footer.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
+        <state relative-caret-position="1540">
           <caret line="55" column="16" selection-start-line="55" selection-start-column="16" selection-end-line="55" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/domains/pages/News.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1428">
+          <caret line="56" column="49" selection-start-line="56" selection-start-column="49" selection-end-line="56" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/domains/Preloder.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/domains/MainPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="54" column="16" selection-start-line="54" selection-start-column="16" selection-end-line="54" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/domains/pages/Form.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+        <state relative-caret-position="252">
+          <caret line="39" column="55" selection-start-line="39" selection-start-column="55" selection-end-line="39" selection-end-column="55" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
-            <element signature="e#267#378#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/domains/PagesStyle/Form.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="67">
+          <caret line="74" column="32" selection-start-line="74" selection-start-column="32" selection-end-line="74" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/domains/pages/HeaderNavigation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/domains/PagesStyle/PagesStyle.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="38" column="29" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
         </state>
       </provider>
     </entry>

@@ -37,7 +37,6 @@
     font-size: 20px;
     line-height: 50px;
     font-variant: small-caps;
-    cursor: pointer;
     position: relative;
 }
 
@@ -47,6 +46,7 @@
 .conteiner span{
     content: ' ';
     width: 0;
+    cursor: pointer;
 
 }
 .conteiner span:hover{

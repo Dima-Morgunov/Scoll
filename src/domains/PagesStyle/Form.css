@@ -59,12 +59,10 @@
     -moz-appearance: none !important;
     appearance: none !important;
     border-radius: 0;
-    width: 280px;
     height: 66px;
     display: block;
     margin: 65px auto 0;
     width: 360px;
-    height: 66px;
     background-color: #00ffff;
     color: #212121;
     font-family: Raleway Bold;
@@ -73,6 +71,12 @@
     letter-spacing: 1px;
     cursor: pointer;
     border: none;
+}
+.Form-conteiner-button:disabled{
+}
+.Form-conteiner-loader{
+    display: block;
+    margin: 65px auto 0;
 }
 @media only screen and (max-width: 1220px){
     .Form-wrap-background{

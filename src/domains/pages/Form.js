@@ -1,30 +1,94 @@
 import React, { Component } from 'react';
 import '../PagesStyle/Form.css'
 import axios from "axios";
+import PreloaderIcon from 'react-preloader-icon';
+import TailSpin from 'react-preloader-icon/loaders/Oval';
 
 class  FormPage extends Component{
     state ={
-        data:{
-            name:'',
+        isLoading: false,
+        formError: {
             email:'',
-            text:'',
-        }
+            phone:'',
+        },
+        emailValid: false,
+        phoneValid: false,
+        formValid: false,
+        name:'',
+        email:'',
+        text:'',
     }
 
+
+    onChangeText = (text) =>{
+        console.log(text)
+        let newText = '';
+        let numbers = '0123456789-+';
+
+        for (var i = 0; i < text.length; i++) {
+            if ( numbers.indexOf(text[i]) > -1 ) {
+                newText = newText + text[i];
+            }
+        }
+        this.setState({text: newText})
+    }
     onChange = e =>{
+        const text = (e.target.validity.valid) ? e.target.value : this.state.text;
+            const name = e.target.name;
+            const value = e.target.value;
+        this.setState({[name]: value, text: text},
+            () => { this.validateField(name, value) });
+    };
+
+
+    validateField(fieldName, value){
+        let fieldvalidationError = this.state.formError;
+        let emailValid = this.state.emailValid;
+        let phoneValid = this.state.phoneValid;
+
+        switch(fieldName){
+            case 'email':
+                emailValid = value.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i);
+                fieldvalidationError.email = emailValid? '': 'is invalid';
+                break;
+            case 'phone':
+                phoneValid = value.length >= 5;
+                fieldvalidationError.phone = phoneValid? '': 'is too short';
+                break;
+            default:
+                break
+        }
         this.setState({
-            data: { ...this.state.data, [e.target.name]: e.target.value }
-        })};
+            formErrors: fieldvalidationError,
+            emailValid: emailValid,
+            phoneValid: phoneValid
+        },this.validateForm);
+    }
+    validateForm(){
+        this.setState({formValid: this.state.emailValid && this.state.phoneValid})
+    }
+    errorClass(error) {
+        return(error.length === 0 ? '' : 'has-error');
+    }
 
     onSubmit= () =>{
-        console.log(this.state.data)
-        axios.post(`/email`, this.state.data)
+        this.setState({
+            isLoading: true
+        })
+        let data = {
+            name: this.state.name,
+            email: this.state.email,
+            phone: this.state.phone
+        }
+        console.log(data)
+        axios.post(`/email`, data)
             .then(result => console.log(result))
+            .then(result => this.setState({isLoading: false}))
         }
 
     render(){
 
-        const {data} = this.state
+        const {data, formErrors} = this.state
 
         return(
             <div className='Form-wrap'>
@@ -38,25 +102,38 @@ class  FormPage extends Component{
                         type="text"
                         placeholder="Имя и Фамилия"
                         name='name'
-                        value={data.name}
+                        value={this.state.name}
                         onChange={this.onChange}
                     />
                     <input
                         type="email"
                         placeholder="E-mail"
                         name='email'
-                        value={data.email}
+                        value={this.state.email}
                         onChange={this.onChange}
                     />
                     <input
                         type="tel"
                         placeholder="Телефон"
-                        name='text'
-                        value={data.text}
+                        pattern="[0-9]*"
+                        name='phone'
+                        value={this.state.phone}
                         onChange={this.onChange}
                     />
                 </div>
-                <input className="Form-conteiner-button" type="button" value="Отправить" onClick={this.onSubmit}/>
+                {this.state.isLoading?
+                    <PreloaderIcon
+                        className="Form-conteiner-loader"
+                        loader={TailSpin}
+                        size={60}
+                        strokeWidth={8} // min: 1, max: 50
+                        strokeColor="#006064"
+                        duration={800}>
+                    </PreloaderIcon>
+                    :
+                    <input disabled={!this.state.formValid} className="Form-conteiner-button" type="submit" value="Отправить" onClick={this.onSubmit}/>
+                }
+
             </form>
             </div>
         )
