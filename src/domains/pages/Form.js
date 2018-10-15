@@ -17,27 +17,30 @@ class  FormPage extends Component{
         name:'',
         email:'',
         text:'',
+
     }
 
 
-    onChangeText = (text) =>{
-        console.log(text)
-        let newText = '';
-        let numbers = '0123456789-+';
+    onChangeText = (e) =>{
+        const name = e.target.name;
+        const value = e.target.value;
 
-        for (var i = 0; i < text.length; i++) {
-            if ( numbers.indexOf(text[i]) > -1 ) {
-                newText = newText + text[i];
-            }
+        const re = /^[0-9\b]+$/;
+        // if value is not blank, then test the regex
+        if (e.target.value == '' || re.test(e.target.value)) {
+            this.setState({text: e.target.value},
+                () => { this.validateField(name, value)}
+            )
         }
-        this.setState({text: newText})
     }
     onChange = e =>{
-        const text = (e.target.validity.valid) ? e.target.value : this.state.text;
             const name = e.target.name;
             const value = e.target.value;
-        this.setState({[name]: value, text: text},
+        this.setState({[name]: value},
             () => { this.validateField(name, value) });
+
+        // if value is not blank, then test the regex
+
     };
 
 
@@ -45,15 +48,15 @@ class  FormPage extends Component{
         let fieldvalidationError = this.state.formError;
         let emailValid = this.state.emailValid;
         let phoneValid = this.state.phoneValid;
-
+        console.log(phoneValid + ' ' + emailValid)
         switch(fieldName){
             case 'email':
                 emailValid = value.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i);
-                fieldvalidationError.email = emailValid? '': 'is invalid';
+                fieldvalidationError.email = emailValid? '': 'Некоректный E-mail';
                 break;
             case 'phone':
                 phoneValid = value.length >= 5;
-                fieldvalidationError.phone = phoneValid? '': 'is too short';
+                fieldvalidationError.phone = phoneValid? '': 'Телефон должен содержать как минимум 5 цифр';
                 break;
             default:
                 break
@@ -67,7 +70,7 @@ class  FormPage extends Component{
     validateForm(){
         this.setState({formValid: this.state.emailValid && this.state.phoneValid})
     }
-    errorClass(error) {
+    static errorClass(error) {
         return(error.length === 0 ? '' : 'has-error');
     }
 
@@ -78,12 +81,13 @@ class  FormPage extends Component{
         let data = {
             name: this.state.name,
             email: this.state.email,
-            phone: this.state.phone
+            phone: this.state.text
         }
         console.log(data)
         axios.post(`/email`, data)
             .then(result => console.log(result))
-            .then(result => this.setState({isLoading: false}))
+            .then(result => this.setState({isLoading: false, name:'', email:'',text:''}))
+            .catch(errror => {})
         }
 
     render(){
@@ -117,9 +121,18 @@ class  FormPage extends Component{
                         placeholder="Телефон"
                         pattern="[0-9]*"
                         name='phone'
-                        value={this.state.phone}
-                        onChange={this.onChange}
+                        value={this.state.text}
+                        onChange={this.onChangeText}
                     />
+                    {formErrors?
+                        <div className='Error-wrap'>
+                            <p className='Form-error'>
+                                {formErrors.email || formErrors.phone}
+                            </p>
+                        </div>
+                        :
+                        null
+                    }
                 </div>
                 {this.state.isLoading?
                     <PreloaderIcon

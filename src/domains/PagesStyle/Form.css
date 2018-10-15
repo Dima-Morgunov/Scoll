@@ -73,10 +73,24 @@
     border: none;
 }
 .Form-conteiner-button:disabled{
+    cursor: not-allowed;
 }
 .Form-conteiner-loader{
     display: block;
     margin: 65px auto 0;
+}
+.Error-wrap{
+    display: block;
+    margin: 0px auto;
+}
+.Form-error{
+    position: absolute;
+    width: 450px;
+    left: 50%;
+    margin: 0 0 0 -225px;
+    padding-top: 10px;
+    text-align: center;
+
 }
 @media only screen and (max-width: 1220px){
     .Form-wrap-background{
@@ -119,5 +133,11 @@
         font-size: 30px;
         margin-left: -153.5px;
         text-align: center;
+    }
+    .Form-error{
+        left: 50%;
+        margin-left: -160px;
+        width: 320px;
+
     }
 }
